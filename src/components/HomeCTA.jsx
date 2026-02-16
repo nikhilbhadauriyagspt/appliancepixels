@@ -20,7 +20,7 @@ const HomeCTA = () => {
 
             <a
               href="mailto:info@appliancepixels.shop"
-              className="px-10 py-5 bg-blue-600 text-white rounded-2xl font-heading font-black text-xs tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-2xl active:scale-95 whitespace-nowrap"
+              className="w-full lg:w-auto px-10 py-5 bg-blue-600 text-white rounded-2xl font-heading font-black text-xs tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-2xl active:scale-95 whitespace-nowrap text-center"
             >
               EMAIL SUPPORT
             </a>

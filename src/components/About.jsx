@@ -30,12 +30,12 @@ const About = () => {
                 <span className="text-[11px] font-black uppercase tracking-widest">Our Story & Craft</span>
               </div>
               
-              <h2 className="text-4xl md:text-6xl font-heading font-black text-slate-900 leading-[1.1] tracking-tight">
+              <h2 className="text-3xl md:text-5xl lg:text-6xl font-heading font-black text-slate-900 leading-[1.1] tracking-tight">
                 Engineering Excellence <br />
                 <span className="text-blue-600 italic">For Your Essentials.</span>
               </h2>
               
-              <p className="text-lg text-slate-500 font-medium leading-relaxed">
+              <p className="text-base lg:text-lg text-slate-500 font-medium leading-relaxed">
                 Appliance Pixels is a premier restoration studio dedicated to the longevity of your home essentials. We understand that precision is non-negotiable when it comes to high-end appliances. Our mission is to provide seamless, expert solutions that ensure your household operates at its absolute peak performance.
               </p>
             </div>

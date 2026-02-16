@@ -64,25 +64,25 @@ const Hero = () => {
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
 
           {/* Content: Wider Left Side */}
-          <div className="w-full lg:w-[60%] space-y-10" data-aos="fade-right">
+          <div className="w-full lg:w-[60%] space-y-8 lg:space-y-10" data-aos="fade-right">
             <div className="space-y-4">
-              <h1 className="text-5xl md:text-7xl font-heading font-black text-slate-900 leading-[1.1] tracking-tight min-h-[2.2em] md:min-h-[auto]">
+              <h1 className="text-4xl md:text-6xl lg:text-7xl font-heading font-black text-slate-900 leading-[1.1] tracking-tight min-h-[3.3em] sm:min-h-[2.2em] lg:min-h-[auto]">
                 Premium Solutions <br />
                 <span className="text-blue-600 block md:inline">
                   {displayText}
                 </span>
-                <span className="inline-block w-1 h-12 md:h-16 bg-blue-600 ml-2 animate-pulse align-middle"></span>
+                <span className="inline-block w-1 h-10 md:h-12 lg:h-16 bg-blue-600 ml-2 animate-pulse align-middle"></span>
               </h1>
             </div>
 
-            <p className="text-xl text-slate-500 max-w-2xl leading-relaxed font-medium">
+            <p className="text-lg lg:text-xl text-slate-500 max-w-2xl leading-relaxed font-medium">
               We specialize in the restoration of high-end household appliances. Experience precision, reliability, and peace of mind with our expert technicians.
             </p>
 
-            <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 pt-4">
+            <div className="flex flex-col sm:flex-row items-center sm:items-center gap-6 lg:gap-8 pt-4">
               <button
                 onClick={() => openBookingModal()}
-                className="group px-10 py-5 bg-blue-600 text-white rounded-2xl font-heading font-black text-sm tracking-wide hover:bg-slate-900 transition-all shadow-xl shadow-blue-600/20 active:scale-95 flex items-center gap-3"
+                className="w-full sm:w-auto group px-10 py-5 bg-blue-600 text-white rounded-2xl font-heading font-black text-sm tracking-wide hover:bg-slate-900 transition-all shadow-xl shadow-blue-600/20 active:scale-95 flex items-center justify-center gap-3"
               >
                 Schedule Now
                 <HiOutlineArrowLongRight size={20} className="group-hover:translate-x-2 transition-transform" />
@@ -90,12 +90,12 @@ const Hero = () => {
 
               <div className="flex items-center gap-4">
                 <div className="h-12 w-[1px] bg-slate-200 hidden sm:block"></div>
-                <div className="flex flex-col gap-1">
+                <div className="flex flex-col gap-1 items-center sm:items-start text-center sm:text-left">
                   <div className="flex items-center gap-2 text-slate-900 font-bold text-sm">
                     <HiCheckCircle className="text-green-500" size={18} />
                     <span>Certified Technicians</span>
                   </div>
-                  <p className="text-[11px] text-slate-400 font-medium ml-6 uppercase tracking-wider">Background Verified</p>
+                  <p className="text-[10px] lg:text-[11px] text-slate-400 font-medium sm:ml-6 uppercase tracking-wider">Background Verified</p>
                 </div>
               </div>
             </div>

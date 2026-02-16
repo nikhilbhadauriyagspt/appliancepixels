@@ -26,11 +26,11 @@ const StatsAndProcess = () => {
       <section className="py-24 bg-blue-50/30">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
-            <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900 mb-6">
+            <h2 className="text-3xl md:text-5xl font-heading font-black text-slate-900 mb-6">
               Simple Steps to Get <br />
               <span className="text-blue-600">You Back on Track.</span>
             </h2>
-            <p className="text-lg text-slate-500 font-medium">
+            <p className="text-base md:text-lg text-slate-500 font-medium">
               We've refined our process to be as smooth as possible, ensuring you get the best service without the stress.
             </p>
           </div>
