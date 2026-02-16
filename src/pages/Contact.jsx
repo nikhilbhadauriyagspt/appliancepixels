@@ -30,7 +30,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-white">
       <Helmet>
-        <title>Contact Us | Appliance Pixels | California Support</title>
+        <title>Contact Us | Appliance Pixels | Ohio Support</title>
         <meta name="description" content="Get in touch with us for professional appliance maintenance and repair services." />
         <link rel="canonical" href="https://www.appliancepixels.com/contact" />
       </Helmet>
@@ -61,10 +61,10 @@ const Contact = () => {
             <div className="lg:col-span-1 space-y-6">
               <div className="p-8 bg-blue-50/50 border border-blue-100 rounded-[2rem] group hover:bg-white hover:shadow-xl hover:shadow-blue-600/5 transition-all duration-500">
                 <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-sm mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
-                  <HiOutlinePhone size={24} />
+                  <HiOutlineArrowPath size={24} />
                 </div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Call Experts</p>
-                <a href="tel:+15305544817" className="text-xl font-heading font-black text-slate-900 leading-none">+1 (530) 554-4817</a>
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Support Status</p>
+                <p className="text-xl font-heading font-black text-slate-900 leading-none">24/7 Online Support</p>
               </div>
 
               <div className="p-8 bg-emerald-50/50 border border-emerald-100 rounded-[2rem] group hover:bg-white hover:shadow-xl hover:shadow-emerald-600/5 transition-all duration-500">
@@ -80,7 +80,7 @@ const Contact = () => {
                   <HiOutlineMapPin size={24} />
                 </div>
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Our Location</p>
-                <p className="text-lg font-heading font-black text-slate-900 leading-tight">Grandview Glendale, <br/> CA 91201, USA</p>
+                <p className="text-lg font-heading font-black text-slate-900 leading-tight">4089 Leap Rd, <br/> Hilliard, OH 43026, USA</p>
               </div>
             </div>
 

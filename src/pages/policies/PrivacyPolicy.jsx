@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen pt-32 pb-24">
+    <div className="bg-white min-h-screen pt-44 pb-24">
       <Helmet>
         <title>Privacy Policy - Appliance Pixels</title>
         <meta name="description" content="Detailed Privacy Policy for Appliance Pixels. Understand how we collect, use, and protect your data." />
@@ -177,12 +177,12 @@ const PrivacyPolicy = () => {
           <section id="dnt">
             <h3 className="text-xl font-bold text-gray-900 border-b pb-2 mb-4">10. CONTROLS FOR DO-NOT-TRACK FEATURES</h3>
             <p>Most web browsers and some mobile operating systems and mobile applications include a Do-Not-Track ("DNT") feature or setting you can activate to signal your privacy preference not to have data about your online browsing activities monitored and collected. At this stage, no uniform technology standard for recognizing and implementing DNT signals has been finalized. As such, we do not currently respond to DNT browser signals or any other mechanism that automatically communicates your choice not to be tracked online. If a standard for online tracking is adopted that we must follow in the future, we will inform you about that practice in a revised version of this Privacy Notice.</p>
-            <p>California law requires us to let you know how we respond to web browser DNT signals. Because there currently is not an industry or legal standard for recognizing or honoring DNT signals, we do not respond to them at this time.</p>
+            <p>Ohio law requires us to let you know how we respond to web browser DNT signals. Because there currently is not an industry or legal standard for recognizing or honoring DNT signals, we do not respond to them at this time.</p>
           </section>
 
           <section id="us-residents">
             <h3 className="text-xl font-bold text-gray-900 border-b pb-2 mb-4">11. DO UNITED STATES RESIDENTS HAVE SPECIFIC PRIVACY RIGHTS?</h3>
-            <p><em>In Short: If you are a resident of California, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia, you may have the right to request access to and receive details about the personal information we maintain about you and how we have processed it, correct inaccuracies, get a copy of, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. More information is provided below.</em></p>
+            <p><em>In Short: If you are a resident of Ohio, Colorado, Connecticut, Delaware, Florida, Indiana, Iowa, Kentucky, Maryland, Minnesota, Montana, Nebraska, New Hampshire, New Jersey, Oregon, Rhode Island, Tennessee, Texas, Utah, or Virginia, you may have the right to request access to and receive details about the personal information we maintain about you and how we have processed it, correct inaccuracies, get a copy of, or delete your personal information. You may also have the right to withdraw your consent to our processing of your personal information. These rights may be limited in some circumstances by applicable law. More information is provided below.</em></p>
 
             <p className="font-bold mt-6">Categories of Personal Information We Collect</p>
             <p>The table below shows the categories of personal information we have collected in the past twelve (12) months. The table includes illustrative examples of each category and does not reflect the personal information we collect from you. For a comprehensive inventory of all personal information we process, please refer to the section "WHAT INFORMATION DO WE COLLECT?"</p>
@@ -198,7 +198,7 @@ const PrivacyPolicy = () => {
                 </thead>
                 <tbody>
                   <tr><td className="p-3 border font-medium">A. Identifiers</td><td className="p-3 border text-gray-500 text-xs">Contact details, such as real name, alias, postal address, telephone or mobile contact number, unique personal identifier, online identifier, Internet Protocol address, email address, and account name</td><td className="p-3 border text-center font-bold">NO</td></tr>
-                  <tr className="bg-gray-50"><td className="p-3 border font-medium">B. Personal information as defined in the California Customer Records statute</td><td className="p-3 border text-gray-500 text-xs">Name, contact information, education, employment, employment history, and financial information</td><td className="p-3 border text-center font-bold">NO</td></tr>
+                  <tr className="bg-gray-50"><td className="p-3 border font-medium">B. Personal information as defined in the Ohio Customer Records statute</td><td className="p-3 border text-gray-500 text-xs">Name, contact information, education, employment, employment history, and financial information</td><td className="p-3 border text-center font-bold">NO</td></tr>
                   <tr><td className="p-3 border font-medium">C. Protected classification characteristics under state or federal law</td><td className="p-3 border text-gray-500 text-xs">Gender, age, date of birth, race and ethnicity, national origin, marital status, and other demographic data</td><td className="p-3 border text-center font-bold">NO</td></tr>
                   <tr className="bg-gray-50"><td className="p-3 border font-medium">D. Commercial information</td><td className="p-3 border text-gray-500 text-xs">Transaction information, purchase history, financial details, and payment information</td><td className="p-3 border text-center font-bold">NO</td></tr>
                   <tr><td className="p-3 border font-medium">E. Biometric information</td><td className="p-3 border text-gray-500 text-xs">Fingerprints and voiceprints</td><td className="p-3 border text-center font-bold">NO</td></tr>
@@ -239,17 +239,17 @@ const PrivacyPolicy = () => {
               <li>Right to request the deletion of your personal data</li>
               <li>Right to obtain a copy of the personal data you previously shared with us</li>
               <li>Right to non-discrimination for exercising your rights</li>
-              <li>Right to opt out of the processing of your personal data if it is used for targeted advertising (or sharing as defined under California’s privacy law), the sale of personal data, or profiling in furtherance of decisions that produce legal or similarly significant effects ("profiling")</li>
+              <li>Right to opt out of the processing of your personal data if it is used for targeted advertising (or sharing as defined under Ohio’s privacy law), the sale of personal data, or profiling in furtherance of decisions that produce legal or similarly significant effects ("profiling")</li>
             </ul>
 
             <p>Depending upon the state where you live, you may also have the following rights:</p>
             <ul className="list-disc pl-10 space-y-1">
               <li>Right to access the categories of personal data being processed (as permitted by applicable law, including the privacy law in Minnesota)</li>
-              <li>Right to obtain a list of the categories of third parties to which we have disclosed personal data (as permitted by applicable law, including the privacy law in California, Delaware, and Maryland)</li>
+              <li>Right to obtain a list of the categories of third parties to which we have disclosed personal data (as permitted by applicable law, including the privacy law in Ohio, Delaware, and Maryland)</li>
               <li>Right to obtain a list of specific third parties to which we have disclosed personal data (as permitted by applicable law, including the privacy law in Minnesota and Oregon)</li>
               <li>Right to obtain a list of third parties to which we have sold personal data (as permitted by applicable law, including the privacy law in Connecticut)</li>
               <li>Right to review, understand, question, and depending on where you live, correct how personal data has been profiled (as permitted by applicable law, including the privacy law in Connecticut and Minnesota)</li>
-              <li>Right to limit use and disclosure of sensitive personal data (as permitted by applicable law, including the privacy law in California)</li>
+              <li>Right to limit use and disclosure of sensitive personal data (as permitted by applicable law, including the privacy law in Ohio)</li>
               <li>Right to opt out of the collection of sensitive data and personal data collected through the operation of a voice or facial recognition feature (as permitted by applicable law, including the privacy law in Florida)</li>
             </ul>
 
@@ -261,9 +261,6 @@ const PrivacyPolicy = () => {
             <p>If you submit the request through an authorized agent, we may need to collect additional information to verify your identity before processing your request and the agent will need to provide a written and signed permission from you to submit such request on your behalf.</p>
             <p className="font-bold mt-6">Appeals</p>
             <p>Under certain US state data protection laws, if we decline to take action regarding your request, you may appeal our decision by emailing us at <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a>. We will inform you in writing of any action taken or not taken in response to the appeal, including a written explanation of the reasons for the decisions. If your appeal is denied, you may submit a complaint to your state attorney general.</p>
-            <p className="font-bold mt-6">California "Shine The Light" Law</p>
-            <p>California Civil Code Section 1798.83, also known as the "Shine The Light" law, permits our users who are California residents to request and obtain from us, once a year and free of charge, information about categories of personal information (if any) we disclosed to third parties for direct marketing purposes and the names and addresses of all third parties with which we shared personal information in the immediately preceding calendar year. If you are a California resident and would like to make such a request, please submit your request in writing to us by using the contact details provided in the section "HOW CAN YOU CONTACT US ABOUT THIS NOTICE?"</p>
-
           </section>
 
           <section id="updates">
@@ -277,8 +274,8 @@ const PrivacyPolicy = () => {
             <p>If you have questions or comments about this notice, you may email us at <strong>appliancepixels@outlook.com</strong> or contact us by post at:</p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold">
               Appliance Pixels<br />
-              Grandview<br />
-              Glendale, CA 91201<br />
+              4089 Leap Rd<br />
+              Hilliard, OH 43026<br />
               United States
             </address>
           </section>

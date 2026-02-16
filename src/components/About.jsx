@@ -19,12 +19,6 @@ const About = () => {
               <div className="absolute inset-0 bg-blue-900/10 transition-all"></div>
             </div>
             
-            {/* Experience Badge */}
-            <div className="absolute -bottom-10 -right-10 bg-blue-600 text-white p-10 rounded-[2.5rem] shadow-2xl z-20" data-aos="zoom-in" data-aos-delay="300">
-              <p className="text-5xl font-heading font-black mb-1">15+</p>
-              <p className="text-[10px] font-bold uppercase tracking-[0.2em] opacity-80 leading-tight">Years of <br /> Technical <br /> Mastery</p>
-            </div>
-
             {/* Decorative Background Shape */}
             <div className="absolute -top-12 -left-12 w-64 h-64 bg-slate-50 rounded-full -z-0"></div>
           </div>
@@ -65,7 +59,7 @@ const About = () => {
                 to="/about"
                 className="inline-flex items-center gap-4 text-slate-900 font-heading font-black text-sm uppercase tracking-widest group border-b-2 border-slate-100 pb-2 hover:border-blue-600 transition-all"
               >
-                Learn More About Us
+                Read More About Us
                 <HiOutlineArrowLongRight className="group-hover:translate-x-2 transition-transform" />
               </Link>
             </div>

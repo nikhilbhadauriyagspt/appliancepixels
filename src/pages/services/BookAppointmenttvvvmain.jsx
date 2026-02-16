@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import { Link } from 'react-router-dom';
 import { useSettings } from '../../context/SettingsContext';
 
-import { FaPhoneAlt } from 'react-icons/fa';
+import { HiEnvelope } from 'react-icons/hi2';
 
 const BookAppointmentPage = () => {
 
@@ -80,15 +80,15 @@ const BookAppointmentPage = () => {
                         </a>
                         <nav id="navmenu" className="navmenu">
                             <div className="d-flex align-items-center gap-3 text-start">
-                                {/* Phone Block */}
-                                <a href={`tel:${settings.contact_phone || "+14028485586"}`} className="d-flex align-items-center gap-3 text-decoration-none" style={{ cursor: 'pointer' }}>
+                                {/* Support Block */}
+                                <a href="mailto:info@appliancepixels.com" className="d-flex align-items-center gap-3 text-decoration-none" style={{ cursor: 'pointer' }}>
                                     <div className="rounded-circle d-flex align-items-center justify-content-center flex-shrink-0"
                                         style={{ width: '45px', height: '45px', backgroundColor: 'rgba(255, 255, 255, 0.2)', color: '#ffffff' }}>
-                                        <FaPhoneAlt size={18} />
+                                        <HiEnvelope size={18} />
                                     </div>
                                     <div className="d-flex flex-column">
-                                        <span className="fw-bold text-uppercase" style={{ fontSize: '11px', color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.2' }}>Call Anytime</span>
-                                        <span className="fw-bold text-nowrap" style={{ fontSize: '20px', color: '#ffffff', lineHeight: '1.2' }}>{settings.contact_phone || "+1-402-848-5586"}</span>
+                                        <span className="fw-bold text-uppercase" style={{ fontSize: '11px', color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.2' }}>Email Us</span>
+                                        <span className="fw-bold text-nowrap" style={{ fontSize: '14px', color: '#ffffff', lineHeight: '1.2' }}>info@appliancepixels.com</span>
                                     </div>
                                 </a>
                             </div>

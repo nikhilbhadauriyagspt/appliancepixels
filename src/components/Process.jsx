@@ -4,7 +4,7 @@ const steps = [
   {
     num: "01",
     title: "Request Service",
-    desc: "Book your appointment online or call us. We're available 24/7 for your needs."
+    desc: "Book your appointment online easily. We are here to help with your repair needs."
   },
   {
     num: "02",

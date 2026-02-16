@@ -69,13 +69,6 @@ const About = () => {
                 <div className="rounded-[3rem] overflow-hidden shadow-2xl aspect-[4/5] md:aspect-square lg:aspect-[4/5]">
                   <img src="/banner/about.jpg" className="w-full h-full object-cover" alt="Technical Workshop" />
                 </div>
-                {/* Floating Metric */}
-                <div className="absolute -bottom-10 -right-4 md:right-10 bg-white p-10 rounded-[2.5rem] shadow-2xl border border-slate-50 hidden sm:block">
-                  <div className="flex items-center gap-6">
-                    <div className="text-blue-600 text-5xl font-heading font-black">15+</div>
-                    <div className="text-slate-400 text-[10px] font-black uppercase tracking-[0.2em] leading-tight">Years of <br /> Unmatched <br /> Expertise</div>
-                  </div>
-                </div>
               </div>
             </div>
             <div className="w-full lg:w-1/2 space-y-10" data-aos="fade-left">

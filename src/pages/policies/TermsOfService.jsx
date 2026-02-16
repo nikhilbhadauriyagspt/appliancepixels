@@ -7,7 +7,7 @@ const TermsOfService = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen pt-32 pb-24">
+    <div className="bg-white min-h-screen pt-44 pb-24">
       <Helmet>
         <title>Terms of Service - Appliance Pixels</title>
         <meta name="description" content="Official Terms of Service for Appliance Pixels. Agreement to our legal terms and conditions." />
@@ -23,8 +23,8 @@ const TermsOfService = () => {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4 uppercase">AGREEMENT TO OUR LEGAL TERMS</h2>
             <p>
-              We are Appliance Pixels ("<strong>Company</strong>," "<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>"), a company registered in California,
-              United States at Grandview, Glendale, CA 91201.
+              We are Appliance Pixels ("<strong>Company</strong>," "<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>"), a company registered in Ohio,
+              United States at 4089 Leap Rd, Hilliard, OH 43026, United States.
             </p>
             <p>
               We operate the website <a href="http://appliancepixels.shop/" className="text-primary hover:text-secondary">http://appliancepixels.shop/</a> (the "<strong>Site</strong>"), as well as any other related
@@ -38,8 +38,8 @@ const TermsOfService = () => {
               effective servicing.
             </p>
             <p>
-              You can contact us by phone at +1-402-508-9991, email at <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a>, or by
-              mail to Grandview, Glendale, CA 91201, United States.
+              You can contact us by email at <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a>, or by
+              mail to 4089 Leap Rd, Hilliard, OH 43026, United States.
             </p>
             <p>
               These Legal Terms constitute a legally binding agreement made between you, whether
@@ -88,7 +88,6 @@ const TermsOfService = () => {
               <li><a href="#indemnification" className="text-primary hover:underline uppercase">INDEMNIFICATION</a></li>
               <li><a href="#data" className="text-primary hover:underline uppercase">USER DATA</a></li>
               <li><a href="#electronic" className="text-primary hover:underline uppercase">ELECTRONIC COMMUNICATIONS, TRANSACTIONS, AND SIGNATURES</a></li>
-              <li><a href="#california" className="text-primary hover:underline uppercase">CALIFORNIA USERS AND RESIDENTS</a></li>
               <li><a href="#miscellaneous" className="text-primary hover:underline uppercase">MISCELLANEOUS</a></li>
               <li><a href="#contact" className="text-primary hover:underline uppercase">CONTACT US</a></li>
             </ol>
@@ -223,12 +222,12 @@ const TermsOfService = () => {
 
           <section id="law">
             <h3 className="text-xl font-bold text-gray-900 border-b pb-2 mb-4 uppercase">11. GOVERNING LAW</h3>
-            <p>These Legal Terms and your use of the Services are governed by and construed in accordance with the laws of the State of California applicable to agreements made and to be entirely performed within the State of California, without regard to its conflict of law principles.</p>
+            <p>These Legal Terms and your use of the Services are governed by and construed in accordance with the laws of the State of Ohio applicable to agreements made and to be entirely performed within the State of Ohio, without regard to its conflict of law principles.</p>
           </section>
 
           <section id="dispute">
             <h3 className="text-xl font-bold text-gray-900 border-b pb-2 mb-4 uppercase">12. DISPUTE RESOLUTION</h3>
-            <p>Any legal action of whatever nature brought by either you or us (collectively, the "Parties" and individually, a "Party") shall be commenced or prosecuted in the state and federal courts located in California, and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the Uniform Computer Information Transaction Act (UCITA) are excluded from these Legal Terms.</p>
+            <p>Any legal action of whatever nature brought by either you or us (collectively, the "Parties" and individually, a "Party") shall be commenced or prosecuted in the state and federal courts located in Ohio, and the Parties hereby consent to, and waive all defenses of lack of personal jurisdiction and forum non conveniens with respect to venue and jurisdiction in such state and federal courts. Application of the United Nations Convention on Contracts for the International Sale of Goods and the Uniform Computer Information Transaction Act (UCITA) are excluded from these Legal Terms.</p>
           </section>
 
           <section id="corrections">
@@ -261,13 +260,8 @@ const TermsOfService = () => {
             <p>Visiting the Services, sending us emails, and completing online forms constitute electronic communications. You consent to receive electronic communications, and you agree that all agreements, notices, disclosures, and other communications we provide to you electronically, via email and on the Services, satisfy any legal requirement that such communication be in writing. YOU HEREBY AGREE TO THE USE OF ELECTRONIC SIGNATURES, CONTRACTS, ORDERS, AND OTHER RECORDS, AND TO ELECTRONIC DELIVERY OF NOTICES, POLICIES, AND RECORDS OF TRANSACTIONS INITIATED OR COMPLETED BY US OR VIA THE SERVICES. You hereby waive any rights or requirements under any statutes, regulations, rules, ordinances, or other laws in any jurisdiction which require an original signature or delivery or retention of non-electronic records, or to payments or the granting of credits by any means other than electronic means.</p>
           </section>
 
-          <section id="california">
-            <h3 className="text-xl font-bold text-gray-900 border-b pb-2 mb-4 uppercase">19. CALIFORNIA USERS AND RESIDENTS</h3>
-            <p>If any complaint with us is not satisfactorily resolved, you can contact the Complaint Assistance Unit of the Division of Consumer Services of the California Department of Consumer Affairs in writing at 1625 North Market Blvd., Suite N 112, Sacramento, California 95834 or by telephone at (800) 952-5210 or (916) 445-1254.</p>
-          </section>
-
           <section id="miscellaneous">
-            <h3 className="text-xl font-bold text-gray-900 border-b pb-2 mb-4 uppercase">20. MISCELLANEOUS</h3>
+            <h3 className="text-xl font-bold text-gray-900 border-b pb-2 mb-4 uppercase">19. MISCELLANEOUS</h3>
             <p>These Legal Terms and any policies or operating rules posted by us on the Services or in respect to the Services constitute the entire agreement and understanding between you and us. Our failure to exercise or enforce any right or provision of these Legal Terms shall not operate as a waiver of such right or provision. These Legal Terms operate to the fullest extent permissible by law. We may assign any or all of our rights and obligations to others at any time. We shall not be responsible or liable for any loss, damage, delay, or failure to act caused by any cause beyond our reasonable control. If any provision or part of a provision of these Legal Terms is determined to be unlawful, void, or unenforceable, that provision or part of the provision is deemed severable from these Legal Terms and does not affect the validity and enforceability of any remaining provisions. There is no joint venture, partnership, employment or agency relationship created between you and us as a result of these Legal Terms or use of the Services. You agree that these Legal Terms will not be construed against us by virtue of having drafted them. You hereby waive any and all defenses you may have based on the electronic form of these Legal Terms and the lack of signing by the parties hereto to execute these Legal Terms.</p>
           </section>
 
@@ -276,10 +270,9 @@ const TermsOfService = () => {
             <p>In order to resolve a complaint regarding the Services or to receive further information regarding use of the Services, please contact us at:</p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold">
               Appliance Pixels<br />
-              Grandview<br />
-              Glendale, CA 91201<br />
+              4089 Leap Rd<br />
+              Hilliard, OH 43026<br />
               United States<br />
-              Phone: +1-402-508-9991<br />
               <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a>
             </address>
           </section>

@@ -66,13 +66,6 @@ const Hero = () => {
           {/* Content: Wider Left Side */}
           <div className="w-full lg:w-[60%] space-y-10" data-aos="fade-right">
             <div className="space-y-4">
-              <div className="flex items-center gap-2">
-                <div className="flex text-blue-600">
-                  {[...Array(5)].map((_, i) => <HiStar key={i} size={14} fill="currentColor" />)}
-                </div>
-                <span className="text-[11px] font-bold text-slate-400 uppercase tracking-[0.2em]">Trusted California Service</span>
-              </div>
-
               <h1 className="text-5xl md:text-7xl font-heading font-black text-slate-900 leading-[1.1] tracking-tight min-h-[2.2em] md:min-h-[auto]">
                 Premium Solutions <br />
                 <span className="text-blue-600 block md:inline">

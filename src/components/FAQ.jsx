@@ -8,7 +8,7 @@ const faqs = [
   },
   {
     question: "What is your warranty policy?",
-    answer: "We offer a comprehensive 90-day warranty on all parts and labor. We stand firmly behind the quality of our craftsmanship."
+    answer: "We offer a comprehensive 45-day warranty on all parts and labor. We stand firmly behind the quality of our craftsmanship."
   },
   {
     question: "How quickly can you arrive?",

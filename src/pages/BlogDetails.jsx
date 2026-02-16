@@ -134,10 +134,10 @@ const BlogDetails = () => {
                   Book Service
                 </button>
                 <a 
-                  href="tel:+15305544817" 
+                  href="mailto:info@appliancepixels.com" 
                   className="px-10 py-5 bg-white/5 border border-white/10 text-white rounded-2xl font-heading font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all text-center"
                 >
-                  Call +1 (530) 554
+                  Email Us
                 </a>
               </div>
             </div>

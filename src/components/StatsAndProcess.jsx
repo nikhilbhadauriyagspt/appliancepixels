@@ -6,7 +6,7 @@ const StatsAndProcess = () => {
     {
       icon: <HiOutlineCalendarDays size={32} />,
       title: 'Easy Scheduling',
-      desc: 'Book your service online or via phone in less than 2 minutes.'
+      desc: 'Book your service online in less than 2 minutes.'
     },
     {
       icon: <HiOutlineWrench size={32} />,
@@ -23,9 +23,9 @@ const StatsAndProcess = () => {
   return (
     <div className="bg-white">
       {/* How It Works - Step by Step */}
-      <section className="py-24">
+      <section className="py-24 bg-blue-50/30">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="max-w-3xl mb-16" data-aos="fade-right">
+          <div className="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
             <h2 className="text-4xl md:text-5xl font-heading font-black text-slate-900 mb-6">
               Simple Steps to Get <br />
               <span className="text-blue-600">You Back on Track.</span>
@@ -37,7 +37,7 @@ const StatsAndProcess = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {steps.map((step, idx) => (
-              <div key={idx} className="relative group" data-aos="fade-up" data-aos-delay={idx * 150}>
+              <div key={idx} className="relative group bg-white p-10 rounded-[2.5rem] shadow-sm hover:shadow-xl transition-all duration-500" data-aos="fade-up" data-aos-delay={idx * 150}>
                 <div className="w-16 h-16 bg-blue-50 text-blue-600 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white transition-all duration-500">
                   {step.icon}
                 </div>

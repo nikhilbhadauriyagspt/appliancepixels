@@ -29,8 +29,8 @@ const TrustFeatures = () => {
     },
     {
       icon: <HiOutlineLifebuoy size={28} />,
-      title: '90-Day Warranty',
-      desc: 'Every repair comes with our signature 90-day warranty on both parts and labor.',
+      title: '45-Day Warranty',
+      desc: 'Every repair comes with our signature 45-day warranty on both parts and labor.',
       bgColor: 'bg-indigo-50/50',
       iconColor: 'text-indigo-600',
       borderColor: 'border-indigo-100'

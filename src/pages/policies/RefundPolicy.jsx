@@ -7,7 +7,7 @@ const RefundPolicy = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen pt-32 pb-24">
+    <div className="bg-white min-h-screen pt-44 pb-24">
       <Helmet>
         <title>Return Policy - Appliance Pixels</title>
         <meta name="description" content="Official Return Policy for Appliance Pixels. Details on returns, process, and refunds." />
@@ -47,8 +47,8 @@ const RefundPolicy = () => {
               Appliance Pixels<br />
               Attn: Returns<br />
               RMA #<br />
-              Grandview<br />
-              Glendale, CA 91201<br />
+              4089 Leap Rd<br />
+              Hilliard, OH 43026<br />
               United States
             </address>
             <p className="mt-6">Return shipping charges will be paid or reimbursed by us.</p>
@@ -78,8 +78,7 @@ const RefundPolicy = () => {
             <p>
               If you have any questions concerning our return policy, please contact us at:
             </p>
-            <div className="bg-primary text-white p-8 rounded-2xl shadow-xl mt-4">
-              <p className="font-bold text-xl mb-2">+1-402-508-9991</p>
+            <div className="bg-primary text-white p-8 rounded-2xl shadow-xl mt-4 text-center">
               <a href="mailto:appliancepixels@outlook.com" className="text-secondary font-bold text-lg hover:underline">appliancepixels@outlook.com</a>
             </div>
           </section>

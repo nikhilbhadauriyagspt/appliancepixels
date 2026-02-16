@@ -5,19 +5,19 @@ const testimonials = [
   {
     id: 1,
     name: 'Sarah Johnson',
-    location: 'Beverly Hills',
+    location: 'Hilliard',
     quote: "The level of professionalism was unmatched. They didn't just fix my refrigerator; they explained the issue and ensured it wouldn't happen again."
   },
   {
     id: 2,
     name: 'Michael Smith',
-    location: 'West Hollywood',
+    location: 'Dublin',
     quote: "Prompt, courteous, and incredibly skilled. A true boutique experience for home maintenance."
   },
   {
     id: 3,
     name: 'Emily Davis',
-    location: 'Santa Monica',
+    location: 'Upper Arlington',
     quote: "I trust no one else with my vintage appliances. Their technical knowledge is simply superior."
   }
 ];

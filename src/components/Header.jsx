@@ -52,10 +52,6 @@ const Header = () => {
           <div className="container mx-auto px-6 lg:px-12 h-full flex justify-between items-center text-[11px] font-bold tracking-wider uppercase">
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-2">
-                <HiClock className="text-blue-200" />
-                <span>Available 24/7 For Emergency Repairs</span>
-              </div>
-              <div className="hidden lg:flex items-center gap-2 border-l border-white/20 pl-8">
                 <HiEnvelope className="text-blue-200" />
                 <span>info@appliancepixels.com</span>
               </div>
@@ -113,7 +109,7 @@ const Header = () => {
                             <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-700">Expert Repair Solutions</span>
                             <Link to="/services" className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-blue-700 transition-colors">View All Services</Link>
                           </div>
-                          {servicesData.slice(0, 10).map((service) => (
+                          {servicesData.map((service) => (
                             <Link
                               key={service.id}
                               to={`/service/${service.slug}`}
@@ -143,9 +139,9 @@ const Header = () => {
                   <HiPhone size={18} />
                 </div>
                 <div className="flex flex-col">
-                  <span className="text-[10px] text-slate-400 uppercase font-black tracking-tighter">Call Anytime</span>
-                  <a href="tel:+15305544817" className="text-base font-heading font-black text-slate-900 leading-none">
-                    +1 (530) 554-4817
+                  <span className="text-[10px] text-slate-400 uppercase font-black tracking-tighter">Support Email</span>
+                  <a href="mailto:info@appliancepixels.com" className="text-base font-heading font-black text-slate-900 leading-none">
+                    info@appliancepixels.com
                   </a>
                 </div>
               </div>
@@ -216,10 +212,10 @@ const Header = () => {
                     </div>
 
                     {link.hasDropdown && (
-                      <div className={`overflow-hidden transition-all duration-300 bg-slate-50 rounded-2xl ${isMobileServicesOpen ? 'max-h-[500px] py-4 px-6 opacity-100' : 'max-h-0 opacity-0'
+                      <div className={`overflow-hidden transition-all duration-300 bg-slate-50 rounded-2xl ${isMobileServicesOpen ? 'max-h-[800px] py-4 px-6 opacity-100' : 'max-h-0 opacity-0'
                         }`}>
                         <div className="flex flex-col gap-4">
-                          {servicesData.slice(0, 8).map((service) => (
+                          {servicesData.map((service) => (
                             <Link
                               key={service.id}
                               to={`/service/${service.slug}`}
@@ -247,13 +243,13 @@ const Header = () => {
             {/* Sidebar Footer */}
             <div className="p-8 bg-slate-50 border-t border-slate-100">
               <div className="space-y-6">
-                <a href="tel:+15305544817" className="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm">
+                <a href="mailto:info@appliancepixels.com" className="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm">
                   <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-700">
-                    <HiPhone size={20} />
+                    <HiEnvelope size={20} />
                   </div>
                   <div>
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Emergency Call</p>
-                    <p className="text-lg font-heading font-black text-slate-900">+1 (530) 554-4817</p>
+                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Support Email</p>
+                    <p className="text-lg font-heading font-black text-slate-900">info@appliancepixels.com</p>
                   </div>
                 </a>
 

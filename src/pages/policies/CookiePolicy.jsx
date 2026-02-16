@@ -8,7 +8,7 @@ const CookiePolicy = () => {
   }, []);
 
   return (
-    <div className="bg-white min-h-screen pt-32 pb-24">
+    <div className="bg-white min-h-screen pt-44 pb-24">
       <Helmet>
         <title>Cookie Policy - Appliance Pixels</title>
         <meta name="description" content="Cookie Policy for Appliance Pixels. Understand how we use cookies and tracking technologies." />
@@ -126,11 +126,10 @@ const CookiePolicy = () => {
             <p>If you have questions or concerns about this Cookie Policy or our use of cookies, you may contact us at:</p>
             <address className="not-italic bg-gray-50 p-8 rounded-2xl border border-gray-100 mt-4 leading-relaxed font-bold">
               Appliance Pixels<br />
-              Grandview<br />
-              Glendale, CA 91201<br />
+              4089 Leap Rd<br />
+              Hilliard, OH 43026<br />
               United States<br />
-              Email: <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a><br />
-              Phone: +1-402-508-9991
+              Email: <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a>
             </address>
           </section>
         </div>

@@ -4,12 +4,15 @@ import {
   HiOutlineEnvelope, 
   HiOutlineMapPin, 
   HiOutlinePaperAirplane, 
-  HiOutlineShieldCheck 
+  HiOutlineShieldCheck,
+  HiChevronDown
 } from 'react-icons/hi2';
 import { Link } from 'react-router-dom';
+import { servicesData } from '../data/services';
 
 const Footer = () => {
   const [subscribed, setSubscribed] = useState(false);
+  const [showAllServices, setShowAllServices] = useState(false);
 
   const handleSubscribe = (e) => {
     e.preventDefault();
@@ -29,12 +32,8 @@ const Footer = () => {
     },
     {
       title: 'Popular Services',
-      links: [
-        { name: 'Washing Machine', path: '/service/washing-machine' },
-        { name: 'Refrigerator Repair', path: '/service/refrigerator' },
-        { name: 'Air Conditioning', path: '/service/air-conditioner' },
-        { name: 'Kitchen Chimney', path: '/service/kitchen-chimney' }
-      ]
+      isServices: true,
+      links: [] // We'll handle this separately
     },
     {
       title: 'Legal & Privacy',
@@ -47,6 +46,8 @@ const Footer = () => {
     }
   ];
 
+  const displayServices = showAllServices ? servicesData : servicesData.slice(0, 4);
+
   return (
     <footer className="bg-slate-50 pt-24 pb-12 border-t border-slate-100">
       <div className="container mx-auto px-6 lg:px-12">
@@ -58,7 +59,7 @@ const Footer = () => {
               <img src="/logo/logo.png" alt="Appliance Pixels" className="h-10 w-auto" />
             </Link>
             <p className="text-slate-500 leading-relaxed font-medium max-w-sm">
-              The premier appliance restoration studio in California. We combine engineering precision with white-glove service to keep your luxury home running flawlessly.
+              The premier appliance restoration studio in Ohio. We combine engineering precision with white-glove service to keep your luxury home running flawlessly.
             </p>
             <div className="flex items-center gap-3 px-4 py-2 bg-blue-50 rounded-full text-blue-700 w-fit">
               <HiOutlineShieldCheck size={18} />
@@ -70,15 +71,38 @@ const Footer = () => {
           {footerLinks.map((group, idx) => (
             <div key={idx} className="lg:col-span-2">
               <h5 className="font-heading font-black text-slate-900 uppercase tracking-widest text-[11px] mb-8">{group.title}</h5>
-              <ul className="space-y-4">
-                {group.links.map((link, i) => (
-                  <li key={i}>
-                    <Link to={link.path} className="text-slate-500 hover:text-blue-600 transition-colors text-[13px] font-bold">
-                      {link.name}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              {group.isServices ? (
+                <div className="space-y-4">
+                  <ul className="space-y-4">
+                    {displayServices.map((service) => (
+                      <li key={service.id}>
+                        <Link to={`/service/${service.slug}`} className="text-slate-500 hover:text-blue-600 transition-colors text-[13px] font-bold">
+                          {service.title}
+                        </Link>
+                      </li>
+                    ))}
+                  </ul>
+                  {servicesData.length > 4 && (
+                    <button 
+                      onClick={() => setShowAllServices(!showAllServices)}
+                      className="flex items-center gap-1 text-[11px] font-black text-blue-600 uppercase tracking-widest hover:text-slate-900 transition-colors pt-2"
+                    >
+                      {showAllServices ? 'Show Less' : 'Show More'} 
+                      <HiChevronDown className={`transition-transform duration-300 ${showAllServices ? 'rotate-180' : ''}`} size={14} />
+                    </button>
+                  )}
+                </div>
+              ) : (
+                <ul className="space-y-4">
+                  {group.links.map((link, i) => (
+                    <li key={i}>
+                      <Link to={link.path} className="text-slate-500 hover:text-blue-600 transition-colors text-[13px] font-bold">
+                        {link.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           ))}
 
@@ -116,11 +140,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 border-y border-slate-200 mb-12">
           <div className="flex items-center gap-5">
             <div className="w-12 h-12 rounded-2xl bg-blue-600/5 flex items-center justify-center text-blue-600 border border-blue-600/10">
-              <HiOutlinePhone size={20} />
+              <HiOutlineShieldCheck size={20} />
             </div>
             <div>
-              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Call Expert</p>
-              <p className="text-sm font-heading font-black text-slate-900">+1 (530) 554-4817</p>
+              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Available</p>
+              <p className="text-sm font-heading font-black text-slate-900">24/7 Service Support</p>
             </div>
           </div>
           <div className="flex items-center gap-5">
@@ -138,7 +162,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Our Studio</p>
-              <p className="text-sm font-heading font-black text-slate-900">Grandview Glendale, CA 91201</p>
+              <p className="text-sm font-heading font-black text-slate-900">4089 Leap Rd, Hilliard, OH 43026</p>
             </div>
           </div>
         </div>

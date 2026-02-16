@@ -14,15 +14,15 @@ const HomeCTA = () => {
                 <span className="text-blue-500">appliance to factory standards?</span>
               </h2>
               <p className="text-slate-400 font-medium">
-                Join over 5,000 satisfied homeowners in California who trust our elite repair studio.
+                Experience premium appliance repair services with our dedicated team of professionals.
               </p>
             </div>
             
             <a 
-              href="tel:+15305544817" 
+              href="mailto:info@appliancepixels.com" 
               className="px-10 py-5 bg-blue-600 text-white rounded-2xl font-heading font-black text-xs tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-2xl active:scale-95 whitespace-nowrap"
             >
-              CALL +1 (530) 554-4817
+              EMAIL SUPPORT
             </a>
           </div>
         </div>

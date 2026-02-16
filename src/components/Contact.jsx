@@ -1,5 +1,5 @@
 ﻿import React, { useState } from 'react';
-import { HiOutlineEnvelope, HiOutlinePhone, HiOutlineMapPin } from 'react-icons/hi2';
+import { HiOutlineEnvelope, HiOutlineShieldCheck, HiOutlineMapPin } from 'react-icons/hi2';
 
 const Contact = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -36,20 +36,20 @@ const Contact = () => {
                   <div>
                     <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Our Location</p>
                     <p className="text-lg font-medium text-white leading-relaxed">
-                      Grandview Glendale, <br />
-                      CA 91201, USA
+                      4089 Leap Rd, <br />
+                      Hilliard, OH 43026, USA
                     </p>
                   </div>
                 </div>
 
                 <div className="flex items-start gap-5">
                   <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-blue-500 border border-white/10">
-                    <HiOutlinePhone size={20} />
+                    <HiOutlineShieldCheck size={20} />
                   </div>
                   <div>
-                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Direct Line</p>
-                    <p className="text-lg font-medium text-white">+1 (530) 554-4817</p>
-                    <p className="text-xs text-slate-500 mt-1">Mon-Sat, 8am - 8pm</p>
+                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Availability</p>
+                    <p className="text-lg font-medium text-white italic">24/7 Rapid Response</p>
+                    <p className="text-xs text-slate-500 mt-1">Always here to help</p>
                   </div>
                 </div>
 
