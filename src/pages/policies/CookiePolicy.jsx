@@ -129,7 +129,7 @@ const CookiePolicy = () => {
               4089 Leap Rd<br />
               Hilliard, OH 43026<br />
               United States<br />
-              Email: <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a>
+              Email: <a href="mailto:info@appliancepixels.shop" className="text-primary">info@appliancepixels.shop</a>
             </address>
           </section>
         </div>

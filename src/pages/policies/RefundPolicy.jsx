@@ -38,7 +38,7 @@ const RefundPolicy = () => {
           <section>
             <h2 className="text-2xl font-bold text-gray-900 mb-4 uppercase">RETURN PROCESS</h2>
             <p>
-              To return an item, please email customer service at <a href="mailto:appliancepixels@outlook.com" className="text-primary font-bold">appliancepixels@outlook.com</a> to obtain
+              To return an item, please email customer service at <a href="mailto:info@appliancepixels.shop" className="text-primary font-bold">info@appliancepixels.shop</a> to obtain
               an Return Merchandise Authorization (RMA) number. After receiving an RMA number, place
               the item securely in its original packaging and include your proof of purchase, then mail your
               return to the following address:
@@ -79,7 +79,7 @@ const RefundPolicy = () => {
               If you have any questions concerning our return policy, please contact us at:
             </p>
             <div className="bg-primary text-white p-8 rounded-2xl shadow-xl mt-4 text-center">
-              <a href="mailto:appliancepixels@outlook.com" className="text-secondary font-bold text-lg hover:underline">appliancepixels@outlook.com</a>
+              <a href="mailto:info@appliancepixels.shop" className="text-secondary font-bold text-lg hover:underline">info@appliancepixels.shop</a>
             </div>
           </section>
         </div>

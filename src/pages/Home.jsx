@@ -27,13 +27,13 @@ const Home = () => {
       <Helmet>
         <title>Appliance Pixels - Trusted Home Appliance Repair Services</title>
         <meta name="description" content="Reliable home appliance repair near you. Experts in washing machines, refrigerators, ACs & more. Certified technicians, same-day service, fair pricing." />
-        <link rel="canonical" href="https://www.appliancepixels.com/" />
-        
+        <link rel="canonical" href="https://www.appliancepixels.shop/" />
+
         {/* Social Media Sharing Tags */}
         <meta property="og:title" content="Appliance Pixels - Trusted Home Appliance Repair Services" />
         <meta property="og:description" content="Reliable home appliance repair near you. Experts in washing machines, refrigerators, ACs & more. Certified technicians, same-day service, fair pricing." />
-        <meta property="og:image" content="https://www.appliancepixels.com/logo/logo.png" />
-        <meta property="og:url" content="https://www.appliancepixels.com/" />
+        <meta property="og:image" content="https://www.appliancepixels.shop/logo/logo.png" />
+        <meta property="og:url" content="https://www.appliancepixels.shop/" />
         <meta name="twitter:card" content="summary_large_image" />
       </Helmet>
       <Hero />

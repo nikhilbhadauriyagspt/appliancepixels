@@ -32,7 +32,7 @@ const Contact = () => {
       <Helmet>
         <title>Contact Us | Appliance Pixels | Ohio Support</title>
         <meta name="description" content="Get in touch with us for professional appliance maintenance and repair services." />
-        <link rel="canonical" href="https://www.appliancepixels.com/contact" />
+        <link rel="canonical" href="https://www.appliancepixels.shop/contact" />
       </Helmet>
 
       {/* Hero */}

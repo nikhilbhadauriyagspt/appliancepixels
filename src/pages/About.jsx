@@ -35,7 +35,7 @@ const About = () => {
       <Helmet>
         <title>Our Story | Appliance Pixels | Professional Repair Mastery</title>
         <meta name="description" content="Discover Appliance Pixels's commitment to professional appliance repair standards, technical expertise, and transparent service delivery." />
-        <link rel="canonical" href="https://www.appliancepixels.com/about" />
+        <link rel="canonical" href="https://www.appliancepixels.shop/about" />
       </Helmet>
 
       {/* Modern Hero Section */}

@@ -38,7 +38,7 @@ const TermsOfService = () => {
               effective servicing.
             </p>
             <p>
-              You can contact us by email at <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a>, or by
+              You can contact us by email at <a href="mailto:info@appliancepixels.shop" className="text-primary">info@appliancepixels.shop</a>, or by
               mail to 4089 Leap Rd, Hilliard, OH 43026, United States.
             </p>
             <p>
@@ -115,7 +115,7 @@ const TermsOfService = () => {
             </ul>
             <p>solely for your personal, non-commercial use or internal business purpose.</p>
             <p>Except as set out in this section or elsewhere in our Legal Terms, no part of the Services and no Content or Marks may be copied, reproduced, aggregated, republished, uploaded, posted, publicly displayed, encoded, translated, transmitted, distributed, sold, licensed, or otherwise exploited for any commercial purpose whatsoever, without our express prior written permission.</p>
-            <p>If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a>. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.</p>
+            <p>If you wish to make any use of the Services, Content, or Marks other than as set out in this section or elsewhere in our Legal Terms, please address your request to: <a href="mailto:info@appliancepixels.shop" className="text-primary">info@appliancepixels.shop</a>. If we ever grant you the permission to post, reproduce, or publicly display any part of our Services or Content, you must identify us as the owners or licensors of the Services, Content, or Marks and ensure that any copyright or proprietary notice appears or is visible on posting, reproducing, or displaying our Content.</p>
             <p>We reserve all rights not expressly granted to you in and to the Services, Content, and Marks.</p>
             <p>Any breach of these Intellectual Property Rights will constitute a material breach of our Legal Terms and your right to use our Services will terminate immediately.</p>
 
@@ -273,7 +273,7 @@ const TermsOfService = () => {
               4089 Leap Rd<br />
               Hilliard, OH 43026<br />
               United States<br />
-              <a href="mailto:appliancepixels@outlook.com" className="text-primary">appliancepixels@outlook.com</a>
+              <a href="mailto:info@appliancepixels.shop" className="text-primary">info@appliancepixels.shop</a>
             </address>
           </section>
         </div>
