@@ -1,0 +1,26 @@
+﻿{
+  "short_name": "AppliancePixels",
+  "name": "Appliance Pixels - Expert Repair Services",
+  "icons": [
+    {
+      "src": "/logo/logo.png",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/png"
+    },
+    {
+      "src": "/logo/logo.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/logo/logo.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#0F172A",
+  "background_color": "#ffffff"
+}
+
