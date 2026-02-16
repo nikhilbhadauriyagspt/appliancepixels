@@ -13,7 +13,7 @@ const Hero = () => {
   const [currentWordIndex, setCurrentWordIndex] = useState(0);
   const [displayText, setDisplayText] = useState('');
   const [isDeleting, setIsSubmitted] = useState(false);
-  
+
   const words = [
     "For Your Home.",
     "For Your Kitchen.",
@@ -24,10 +24,10 @@ const Hero = () => {
 
   useEffect(() => {
     let typingSpeed = isDeleting ? 70 : 150; // Slower typing (from 50/100 to 70/150)
-    
+
     const timer = setTimeout(() => {
       const currentFullText = words[currentWordIndex];
-      
+
       if (!isDeleting) {
         setDisplayText(currentFullText.slice(0, displayText.length + 1));
         if (displayText === currentFullText) {
@@ -46,23 +46,23 @@ const Hero = () => {
   }, [displayText, isDeleting, currentWordIndex]);
 
   const services = [
-    { url: '/banner/hero-1.jpg', label: 'Refrigerator Repair' },
-    { url: '/banner/hero-2.jpg', label: 'AC Servicing' },
-    { url: '/banner/hero-4.jpg', label: 'Washing Machine' },
+    { url: '/banner/hero-2.jpg', label: 'Refrigerator Repair' },
+    { url: '/banner/hero-4.jpg', label: 'AC Servicing' },
+    { url: '/banner/hero-1.jpg', label: 'Washing Machine' },
   ];
 
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-slate-50/50 pt-36 pb-20 overflow-hidden">
-      
+
       {/* Subtle Visual Enhancements */}
       <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/30 rounded-full blur-[120px] -mr-40 -mt-40 opacity-40 z-0"></div>
-      
+
       {/* Faint Pattern Overlay */}
       <div className="absolute inset-0 z-0 opacity-[0.02]" style={{ backgroundImage: 'radial-gradient(#1e40af 0.5px, transparent 0.5px)', backgroundSize: '24px 24px' }}></div>
 
       <div className="container mx-auto px-6 lg:px-12 relative z-10">
         <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-20">
-          
+
           {/* Content: Wider Left Side */}
           <div className="w-full lg:w-[60%] space-y-10" data-aos="fade-right">
             <div className="space-y-4">
@@ -80,14 +80,14 @@ const Hero = () => {
             </p>
 
             <div className="flex flex-col sm:flex-row items-start sm:items-center gap-8 pt-4">
-              <button 
+              <button
                 onClick={() => openBookingModal()}
                 className="group px-10 py-5 bg-blue-600 text-white rounded-2xl font-heading font-black text-sm tracking-wide hover:bg-slate-900 transition-all shadow-xl shadow-blue-600/20 active:scale-95 flex items-center gap-3"
               >
                 Schedule Now
                 <HiOutlineArrowLongRight size={20} className="group-hover:translate-x-2 transition-transform" />
               </button>
-              
+
               <div className="flex items-center gap-4">
                 <div className="h-12 w-[1px] bg-slate-200 hidden sm:block"></div>
                 <div className="flex flex-col gap-1">
@@ -137,7 +137,7 @@ const Hero = () => {
                 </button>
               </div>
             </div>
-            
+
             {/* Pagination Container */}
             <div className="custom-pagination mt-8 flex justify-center gap-2"></div>
           </div>

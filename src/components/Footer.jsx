@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { 
-  HiOutlinePhone, 
-  HiOutlineEnvelope, 
-  HiOutlineMapPin, 
-  HiOutlinePaperAirplane, 
+import {
+  HiOutlinePhone,
+  HiOutlineEnvelope,
+  HiOutlineMapPin,
+  HiOutlinePaperAirplane,
   HiOutlineShieldCheck,
   HiChevronDown
 } from 'react-icons/hi2';
@@ -52,7 +52,7 @@ const Footer = () => {
     <footer className="bg-slate-50 pt-24 pb-12 border-t border-slate-100">
       <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-16 mb-20">
-          
+
           {/* Brand Column */}
           <div className="lg:col-span-4 space-y-10">
             <Link to="/" className="inline-block">
@@ -83,11 +83,11 @@ const Footer = () => {
                     ))}
                   </ul>
                   {servicesData.length > 4 && (
-                    <button 
+                    <button
                       onClick={() => setShowAllServices(!showAllServices)}
                       className="flex items-center gap-1 text-[11px] font-black text-blue-600 uppercase tracking-widest hover:text-slate-900 transition-colors pt-2"
                     >
-                      {showAllServices ? 'Show Less' : 'Show More'} 
+                      {showAllServices ? 'Show Less' : 'Show More'}
                       <HiChevronDown className={`transition-transform duration-300 ${showAllServices ? 'rotate-180' : ''}`} size={14} />
                     </button>
                   )}
@@ -153,7 +153,7 @@ const Footer = () => {
             </div>
             <div>
               <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Email Support</p>
-              <p className="text-sm font-heading font-black text-slate-900 leading-none">info@appliancepixels.com</p>
+              <p className="text-sm font-heading font-black text-slate-900 leading-none">info@appliancepixels.shop</p>
             </div>
           </div>
           <div className="flex items-center gap-5">
@@ -171,7 +171,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-8">
           <p className="text-[11px] font-bold text-slate-400 tracking-wider text-center md:text-left uppercase">
             &copy; {new Date().getFullYear()} Appliance Pixels. ALL RIGHTS RESERVED. <br className="md:hidden" />
-            <span className="hidden md:inline mx-4 opacity-30">|</span> 
+            <span className="hidden md:inline mx-4 opacity-30">|</span>
             Restored With Precision.
           </p>
           <div className="flex gap-10">

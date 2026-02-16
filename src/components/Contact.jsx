@@ -16,7 +16,7 @@ const Contact = () => {
         <div className="bg-slate-900 rounded-[3rem] overflow-hidden relative">
           {/* Subtle Background Accent */}
           <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-[120px] opacity-20 -mr-40 -mt-40"></div>
-          
+
           <div className="flex flex-col lg:flex-row relative z-10">
             {/* Info Side */}
             <div className="w-full lg:w-5/12 p-10 md:p-16 lg:p-20 bg-slate-800/50 backdrop-blur-md">
@@ -27,7 +27,7 @@ const Contact = () => {
                 Let's Restore <br />
                 <span className="text-blue-500 italic">Your Home.</span>
               </h2>
-              
+
               <div className="space-y-10">
                 <div className="flex items-start gap-5">
                   <div className="w-12 h-12 rounded-2xl bg-white/5 flex items-center justify-center text-blue-500 border border-white/10">
@@ -59,7 +59,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest mb-1">Digital Support</p>
-                    <p className="text-lg font-medium text-white">info@appliancepixels.com</p>
+                    <p className="text-lg font-medium text-white">info@appliancepixels.shop</p>
                   </div>
                 </div>
               </div>

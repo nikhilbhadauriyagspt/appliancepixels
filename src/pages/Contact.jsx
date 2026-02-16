@@ -1,17 +1,17 @@
 ﻿import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet-async';
-import { 
-  HiOutlinePhone, 
-  HiOutlineEnvelope, 
-  HiOutlineMapPin, 
-  HiOutlineCheckBadge, 
-  HiOutlineArrowPath 
+import {
+  HiOutlinePhone,
+  HiOutlineEnvelope,
+  HiOutlineMapPin,
+  HiOutlineCheckBadge,
+  HiOutlineArrowPath
 } from 'react-icons/hi2';
 
 const Contact = () => {
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
-  
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
@@ -19,7 +19,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsLoading(true);
-    
+
     setTimeout(() => {
       setIsLoading(false);
       setIsSubmitted(true);
@@ -37,26 +37,26 @@ const Contact = () => {
 
       {/* Hero */}
       <div className="relative pt-44 pb-20 overflow-hidden bg-slate-50">
-         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/30 rounded-full blur-[120px] -mr-40 -mt-40 opacity-40"></div>
-         <div className="container mx-auto px-6 lg:px-12 relative z-10">
-            <div className="max-w-3xl">
-              <div className="inline-flex items-center gap-3 px-4 py-2 bg-blue-100 rounded-full text-blue-700 mb-6">
-                <span className="text-[11px] font-black uppercase tracking-widest text-blue-600">Concierge Desk</span>
-              </div>
-              <h1 className="text-5xl md:text-7xl font-heading font-black text-slate-900 mb-6 tracking-tight leading-tight">
-                How Can We <span className="text-blue-600">Help?</span>
-              </h1>
-              <p className="text-xl text-slate-500 font-medium leading-relaxed">
-                Connect with our expert team for technical support, service scheduling, or general inquiries. We're here to restore your peace of mind.
-              </p>
+        <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/30 rounded-full blur-[120px] -mr-40 -mt-40 opacity-40"></div>
+        <div className="container mx-auto px-6 lg:px-12 relative z-10">
+          <div className="max-w-3xl">
+            <div className="inline-flex items-center gap-3 px-4 py-2 bg-blue-100 rounded-full text-blue-700 mb-6">
+              <span className="text-[11px] font-black uppercase tracking-widest text-blue-600">Concierge Desk</span>
             </div>
-         </div>
+            <h1 className="text-5xl md:text-7xl font-heading font-black text-slate-900 mb-6 tracking-tight leading-tight">
+              How Can We <span className="text-blue-600">Help?</span>
+            </h1>
+            <p className="text-xl text-slate-500 font-medium leading-relaxed">
+              Connect with our expert team for technical support, service scheduling, or general inquiries. We're here to restore your peace of mind.
+            </p>
+          </div>
+        </div>
       </div>
 
       <section className="py-24">
         <div className="container mx-auto px-6 lg:px-12">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            
+
             {/* Contact Cards */}
             <div className="lg:col-span-1 space-y-6">
               <div className="p-8 bg-blue-50/50 border border-blue-100 rounded-[2rem] group hover:bg-white hover:shadow-xl hover:shadow-blue-600/5 transition-all duration-500">
@@ -72,7 +72,7 @@ const Contact = () => {
                   <HiOutlineEnvelope size={24} />
                 </div>
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Email Support</p>
-                <a href="mailto:info@appliancepixels.com" className="text-lg font-heading font-black text-slate-900 break-all leading-none">info@appliancepixels.com</a>
+                <a href="mailto:info@appliancepixels.shop" className="text-lg font-heading font-black text-slate-900 break-all leading-none">info@appliancepixels.shop</a>
               </div>
 
               <div className="p-8 bg-indigo-50/50 border border-indigo-100 rounded-[2rem] group hover:bg-white hover:shadow-xl hover:shadow-indigo-600/5 transition-all duration-500">
@@ -80,7 +80,7 @@ const Contact = () => {
                   <HiOutlineMapPin size={24} />
                 </div>
                 <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Our Location</p>
-                <p className="text-lg font-heading font-black text-slate-900 leading-tight">4089 Leap Rd, <br/> Hilliard, OH 43026, USA</p>
+                <p className="text-lg font-heading font-black text-slate-900 leading-tight">4089 Leap Rd, <br /> Hilliard, OH 43026, USA</p>
               </div>
             </div>
 
@@ -94,7 +94,7 @@ const Contact = () => {
                     </div>
                     <h2 className="text-3xl font-heading font-black text-slate-900 mb-4">Message Sent!</h2>
                     <p className="text-slate-500 font-medium mb-10">Our technical team will reach out to you within 2 business hours.</p>
-                    <button 
+                    <button
                       onClick={() => setIsSubmitted(false)}
                       className="inline-flex items-center gap-2 text-blue-600 font-black uppercase tracking-widest text-xs hover:text-slate-900 transition-colors"
                     >
@@ -121,8 +121,8 @@ const Contact = () => {
                       <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">How can we help?</label>
                       <textarea required rows={5} className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-6 py-4 focus:outline-none focus:border-blue-600 transition-all font-medium text-slate-900 resize-none" placeholder="Provide technical details or symptoms..."></textarea>
                     </div>
-                    <button 
-                      type="submit" 
+                    <button
+                      type="submit"
                       disabled={isLoading}
                       className="w-full py-5 bg-blue-600 text-white font-heading font-black uppercase tracking-widest text-xs rounded-2xl shadow-xl shadow-blue-600/20 hover:bg-slate-900 transition-all active:scale-[0.98] disabled:bg-slate-200"
                     >

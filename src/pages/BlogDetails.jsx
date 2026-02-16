@@ -2,10 +2,10 @@
 import { useParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { blogsData } from '../data/blogs';
-import { 
-  HiOutlineArrowLongLeft, 
-  HiOutlineUser, 
-  HiOutlineCalendar, 
+import {
+  HiOutlineArrowLongLeft,
+  HiOutlineUser,
+  HiOutlineCalendar,
   HiOutlineBookmark,
   HiOutlineShare,
   HiOutlineClock
@@ -15,7 +15,7 @@ import { useBooking } from '../context/BookingContext';
 const BlogDetails = () => {
   const { id } = useParams();
   const { openBookingModal } = useBooking();
-  
+
   // Checking data source - our previous edit was to src/data/blogs.js
   // Let's re-import from correct path
   const blog = blogsData.find(b => b.id === parseInt(id));
@@ -28,7 +28,7 @@ const BlogDetails = () => {
     return (
       <div className="min-h-screen flex items-center justify-center bg-slate-50 pt-20">
         <Helmet>
-           <title>Article Not Found | Appliance Pixels</title>
+          <title>Article Not Found | Appliance Pixels</title>
         </Helmet>
         <div className="text-center space-y-8">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-slate-100 rounded-full text-slate-400">
@@ -50,12 +50,12 @@ const BlogDetails = () => {
         <title>{blog.title} | Technical Journal | Appliance Pixels</title>
         <meta name="description" content={blog.shortDesc} />
       </Helmet>
-      
+
       <div className="container mx-auto px-6 lg:px-12">
         {/* Navigation & Header */}
         <div className="max-w-4xl mx-auto mb-16">
           <Link to="/blog" className="inline-flex items-center gap-3 text-[11px] font-black uppercase tracking-widest text-slate-400 hover:text-blue-600 mb-12 transition-colors group">
-            <HiOutlineArrowLongLeft className="group-hover:-translate-x-2 transition-transform" size={18} /> 
+            <HiOutlineArrowLongLeft className="group-hover:-translate-x-2 transition-transform" size={18} />
             Back to All Articles
           </Link>
 
@@ -73,7 +73,7 @@ const BlogDetails = () => {
               {blog.author}
             </div>
           </div>
-          
+
           <h1 className="text-4xl md:text-6xl font-heading font-black text-slate-900 mb-10 leading-[1.1] tracking-tight">
             {blog.title}
           </h1>
@@ -86,10 +86,10 @@ const BlogDetails = () => {
         {/* Hero Image */}
         <div className="max-w-6xl mx-auto mb-20 relative group" data-aos="zoom-in">
           <div className="rounded-[3.5rem] overflow-hidden shadow-2xl aspect-[21/9] bg-slate-100 border-8 border-white">
-            <img 
-              src={blog.image} 
-              className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105" 
-              alt={blog.title} 
+            <img
+              src={blog.image}
+              className="w-full h-full object-cover transition-transform duration-[2s] group-hover:scale-105"
+              alt={blog.title}
             />
           </div>
           {/* Action Floating Buttons */}
@@ -99,22 +99,22 @@ const BlogDetails = () => {
             </button>
           </div>
         </div>
-             
+
         {/* Content Body */}
         <div className="max-w-4xl mx-auto">
-          <div 
+          <div
             className="prose prose-slate prose-lg md:prose-xl max-w-none 
             prose-headings:font-heading prose-headings:font-black prose-headings:text-slate-900 prose-headings:uppercase prose-headings:tracking-tight
             prose-p:text-slate-600 prose-p:font-medium prose-p:leading-relaxed
             prose-h3:text-2xl prose-h3:mt-12 prose-h3:mb-6
             prose-blockquote:border-blue-600 prose-blockquote:bg-slate-50 prose-blockquote:p-8 prose-blockquote:rounded-3xl"
-            dangerouslySetInnerHTML={{ __html: blog.longDesc }} 
+            dangerouslySetInnerHTML={{ __html: blog.longDesc }}
           />
-             
+
           {/* Call to Action Box */}
           <div className="mt-24 bg-slate-900 rounded-[3rem] p-10 md:p-16 relative overflow-hidden group" data-aos="fade-up">
             <div className="absolute top-0 right-0 w-64 h-64 bg-blue-600 rounded-full blur-[100px] opacity-20 -mr-20 -mt-20 group-hover:opacity-30 transition-opacity"></div>
-            
+
             <div className="relative z-10 flex flex-col md:flex-row items-center justify-between gap-10">
               <div className="text-center md:text-left space-y-4">
                 <h3 className="text-2xl md:text-3xl font-heading font-black text-white leading-tight">
@@ -125,16 +125,16 @@ const BlogDetails = () => {
                   Our certified technicians are available 24/7.
                 </p>
               </div>
-              
+
               <div className="flex flex-col sm:flex-row gap-4">
-                <button 
+                <button
                   onClick={() => openBookingModal()}
                   className="px-10 py-5 bg-blue-600 text-white rounded-2xl font-heading font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all shadow-2xl active:scale-95"
                 >
                   Book Service
                 </button>
-                <a 
-                  href="mailto:info@appliancepixels.com" 
+                <a
+                  href="mailto:info@appliancepixels.shop"
                   className="px-10 py-5 bg-white/5 border border-white/10 text-white rounded-2xl font-heading font-black text-xs uppercase tracking-widest hover:bg-white hover:text-slate-900 transition-all text-center"
                 >
                   Email Us

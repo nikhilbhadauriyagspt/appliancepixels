@@ -53,7 +53,7 @@ const Header = () => {
             <div className="flex items-center gap-8">
               <div className="flex items-center gap-2">
                 <HiEnvelope className="text-blue-200" />
-                <span>info@appliancepixels.com</span>
+                <span>info@appliancepixels.shop</span>
               </div>
             </div>
             <div className="flex items-center gap-2 text-blue-200">
@@ -140,8 +140,8 @@ const Header = () => {
                 </div>
                 <div className="flex flex-col">
                   <span className="text-[10px] text-slate-400 uppercase font-black tracking-tighter">Support Email</span>
-                  <a href="mailto:info@appliancepixels.com" className="text-base font-heading font-black text-slate-900 leading-none">
-                    info@appliancepixels.com
+                  <a href="mailto:info@appliancepixels.shop" className="text-base font-heading font-black text-slate-900 leading-none">
+                    info@appliancepixels.shop
                   </a>
                 </div>
               </div>
@@ -243,13 +243,13 @@ const Header = () => {
             {/* Sidebar Footer */}
             <div className="p-8 bg-slate-50 border-t border-slate-100">
               <div className="space-y-6">
-                <a href="mailto:info@appliancepixels.com" className="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm">
+                <a href="mailto:info@appliancepixels.shop" className="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm">
                   <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-700">
                     <HiEnvelope size={20} />
                   </div>
                   <div>
                     <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Support Email</p>
-                    <p className="text-lg font-heading font-black text-slate-900">info@appliancepixels.com</p>
+                    <p className="text-lg font-heading font-black text-slate-900">info@appliancepixels.shop</p>
                   </div>
                 </a>
 
