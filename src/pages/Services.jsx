@@ -3,12 +3,18 @@ import { Link } from 'react-router-dom';
 import { servicesData } from '../data/services';
 import { 
   HiOutlineArrowLongRight, 
-  HiOutlineShieldCheck, 
-  HiOutlineClock, 
-  HiOutlineCheckBadge,
-  HiOutlineWrenchScrewdriver
+  HiOutlineWrenchScrewdriver,
+  HiChevronLeft,
+  HiChevronRight
 } from 'react-icons/hi2';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Navigation, Pagination, EffectFade } from 'swiper/modules';
 import { useBooking } from '../context/BookingContext';
+
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+import 'swiper/css/effect-fade';
 
 const Services = () => {
   const { openBookingModal } = useBooking();
@@ -17,41 +23,32 @@ const Services = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  const bannerImages = [
+    '/service-banner/main-baner.png',
+    '/service-banner/sec-banner.png',
+  ];
+
   return (
     <div className="min-h-screen bg-white">
-      {/* Modern Hero Section */}
-      <div className="relative pt-44 pb-32 overflow-hidden bg-slate-50">
-         {/* Subtle Background Elements */}
-         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-blue-100/50 rounded-full blur-[120px] -mr-40 -mt-40 opacity-60"></div>
-         <div className="absolute inset-0 z-0 opacity-[0.03]" style={{ backgroundImage: 'radial-gradient(#1e40af 0.5px, transparent 0.5px)', backgroundSize: '30px 30px' }}></div>
-         
-         <div className="container mx-auto px-6 lg:px-12 relative z-10 text-center">
-            <div className="max-w-4xl mx-auto">
-              <div className="inline-flex items-center gap-3 px-4 py-2 bg-blue-100 rounded-full text-blue-700 mb-8">
-                <span className="text-[11px] font-black uppercase tracking-widest">Our Service Catalog</span>
+      {/* Banner Slider Hero Section */}
+      <div className="relative pt-[144px] pb-0 overflow-hidden bg-white">
+        <Swiper
+          modules={[Autoplay, Pagination, EffectFade]}
+          effect="fade"
+          spaceBetween={0}
+          slidesPerView={1}
+          autoplay={{ delay: 15000, disableOnInteraction: false }}
+          pagination={{ clickable: true }}
+          className="h-[300px] md:h-[500px] lg:h-[600px] w-full"
+        >
+          {bannerImages.map((imgUrl, idx) => (
+            <SwiperSlide key={idx}>
+              <div className="h-full w-full bg-slate-50">
+                <img src={imgUrl} alt={`Banner ${idx + 1}`} className="w-full h-full object-contain" />
               </div>
-              <h1 className="text-5xl md:text-8xl font-heading font-black text-slate-900 mb-10 leading-[1.05] tracking-tight">
-                Elite Restoration <br />
-                <span className="text-blue-600 italic">For Every Essential.</span>
-              </h1>
-              <p className="text-xl md:text-2xl text-slate-500 font-medium leading-relaxed max-w-2xl mx-auto mb-12">
-                Discover our comprehensive range of specialized technical services, designed to restore and maintain your high-end household appliances.
-              </p>
-              
-              <div className="flex flex-wrap justify-center gap-8">
-                {[
-                  { icon: <HiOutlineShieldCheck />, text: 'Certified Experts' },
-                  { icon: <HiOutlineClock />, text: '24/7 Availability' },
-                  { icon: <HiOutlineCheckBadge />, text: 'Genuine Parts' }
-                ].map((item, idx) => (
-                  <div key={idx} className="flex items-center gap-3 text-slate-400 font-black text-[10px] uppercase tracking-[0.2em]">
-                    <span className="text-blue-600 text-lg">{item.icon}</span>
-                    {item.text}
-                  </div>
-                ))}
-              </div>
-            </div>
-         </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
       </div>
 
       {/* Services Grid */}
