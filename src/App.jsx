@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Home from './pages/Home';
@@ -9,6 +9,7 @@ import Blog from './pages/Blog';
 import Contact from './pages/Contact';
 import ServiceDetails from './pages/ServiceDetails';
 import BlogDetails from './pages/BlogDetails';
+import ExpertSupport from './pages/ExpertSupport';
 import WashingMachineRepair from './pages/services/WashingMachineRepair';
 import RefrigeratorRepair from './pages/services/RefrigeratorRepair';
 import DishwasherRepair from './pages/services/DishwasherRepair';
@@ -30,41 +31,51 @@ import { BookingProvider } from './context/BookingContext';
 import BookingModal from './components/modals/BookingModal';
 import './App.css';
 
+const AppContent = () => {
+  const location = useLocation();
+  const hideHeader = location.pathname === '/services' || location.pathname === '/expert-support';
+
+  return (
+    <div className="App overflow-x-hidden">
+      {!hideHeader && <Header />}
+      <BookingModal />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/expert-support" element={<ExpertSupport />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
+        <Route path="/refund-policy" element={<RefundPolicy />} />
+        <Route path="/cookie-policy" element={<CookiePolicy />} />
+        <Route path="/disclaimer" element={<Disclaimer />} />
+        <Route path="/service/washing-machine" element={<WashingMachineRepair />} />
+        <Route path="/service/refrigerator" element={<RefrigeratorRepair />} />
+        <Route path="/service/dishwasher" element={<DishwasherRepair />} />
+        <Route path="/service/television" element={<TelevisionRepair />} />
+        <Route path="/service/coffee-maker" element={<CoffeeMakerRepair />} />
+        <Route path="/service/other-appliances" element={<OtherAppliances />} />
+        <Route path="/service/air-conditioner" element={<AirConditionerRepair />} />
+        <Route path="/service/microwave-oven" element={<MicrowaveOvenRepair />} />
+        <Route path="/service/oven-stove" element={<OvenStoveRepair />} />
+        <Route path="/service/water-purifier" element={<WaterPurifierRepair />} />
+        <Route path="/service/clothes-dryer" element={<ClothesDryerRepair />} />
+        <Route path="/service/kitchen-chimney" element={<KitchenChimneyRepair />} />
+        <Route path="/service/:id" element={<ServiceDetails />} />
+        <Route path="/blog/:id" element={<BlogDetails />} />
+      </Routes>
+      {!hideHeader && <Footer />}
+    </div>
+  );
+};
+
 function App() {
   return (
     <BookingProvider>
       <Router>
-        <div className="App overflow-x-hidden">
-          <Header />
-          <BookingModal />
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/services" element={<Services />} />
-            <Route path="/blog" element={<Blog />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-            <Route path="/terms-of-service" element={<TermsOfService />} />
-            <Route path="/refund-policy" element={<RefundPolicy />} />
-            <Route path="/cookie-policy" element={<CookiePolicy />} />
-            <Route path="/disclaimer" element={<Disclaimer />} />
-            <Route path="/service/washing-machine" element={<WashingMachineRepair />} />
-            <Route path="/service/refrigerator" element={<RefrigeratorRepair />} />
-            <Route path="/service/dishwasher" element={<DishwasherRepair />} />
-            <Route path="/service/television" element={<TelevisionRepair />} />
-            <Route path="/service/coffee-maker" element={<CoffeeMakerRepair />} />
-            <Route path="/service/other-appliances" element={<OtherAppliances />} />
-            <Route path="/service/air-conditioner" element={<AirConditionerRepair />} />
-            <Route path="/service/microwave-oven" element={<MicrowaveOvenRepair />} />
-            <Route path="/service/oven-stove" element={<OvenStoveRepair />} />
-            <Route path="/service/water-purifier" element={<WaterPurifierRepair />} />
-            <Route path="/service/clothes-dryer" element={<ClothesDryerRepair />} />
-            <Route path="/service/kitchen-chimney" element={<KitchenChimneyRepair />} />
-            <Route path="/service/:id" element={<ServiceDetails />} />
-            <Route path="/blog/:id" element={<BlogDetails />} />
-          </Routes>
-          <Footer />
-        </div>
+        <AppContent />
       </Router>
     </BookingProvider>
   );
