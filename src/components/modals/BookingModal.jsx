@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { useBooking } from '../../context/BookingContext';
-import { 
-  HiXMark, 
-  HiOutlineCheckBadge, 
+import {
+  HiXMark,
+  HiOutlineCheckBadge,
   HiOutlineWrenchScrewdriver,
   HiOutlinePhone,
   HiOutlineEnvelope,
@@ -34,7 +34,7 @@ const BookingModal = () => {
 
       {/* Modal Content */}
       <div className="relative w-full max-w-lg bg-white rounded-[3rem] shadow-2xl overflow-hidden transform transition-all duration-500">
-        
+
         {/* Header Ribbon */}
         <div className="h-2 w-full bg-blue-600"></div>
 
@@ -81,19 +81,19 @@ const BookingModal = () => {
               </div>
 
               <div className="space-y-2">
-                <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Appliance Category</label>
+                <label className="text-[10px] font-black uppercase tracking-widest text-slate-400 ml-1">Service Category</label>
                 <select
                   className="w-full bg-slate-50 border border-slate-100 rounded-2xl px-5 py-3.5 focus:outline-none focus:border-blue-600 focus:bg-white transition-all text-slate-600 font-medium appearance-none cursor-pointer"
                   defaultValue={selectedService}
                 >
-                  <option value="">Choose an appliance</option>
-                  <option value="Washing Machine">Washing Machine</option>
-                  <option value="Refrigerator">Refrigerator</option>
-                  <option value="Dishwasher">Dishwasher</option>
-                  <option value="Television">Television</option>
-                  <option value="Air Conditioner">Air Conditioner</option>
-                  <option value="Microwave Oven">Microwave Oven</option>
-                  <option value="Other">Other Appliances</option>
+                  <option value="">Choose a service</option>
+                  <option value="Printer Issue">Printer Issue</option>
+                  <option value="Router Issue">Router Issue</option>
+                  <option value="PC & Laptop Issue">PC & Laptop Issue</option>
+                  <option value="Email Issue">Email Issue</option>
+                  <option value="Outlook Issues">Outlook Issues</option>
+                  <option value="Device Connectivity">Device Connectivity</option>
+                  <option value="Others">Others</option>
                 </select>
               </div>
 

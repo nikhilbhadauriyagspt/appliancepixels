@@ -24,8 +24,8 @@ const Services = () => {
   }, []);
 
   const bannerImages = [
-    '/service-banner/main-baner.png',
     '/service-banner/sec-banner.png',
+    '/service-banner/main-baner.png',
   ];
 
   return (
@@ -37,7 +37,7 @@ const Services = () => {
           effect="fade"
           spaceBetween={0}
           slidesPerView={1}
-          autoplay={{ delay: 15000, disableOnInteraction: false }}
+          autoplay={{ delay: 30000, disableOnInteraction: false }}
           pagination={{ clickable: true }}
           className="h-[300px] md:h-[500px] lg:h-[600px] w-full"
         >

@@ -49,13 +49,7 @@ const Header = () => {
         {/* Top Tier: Blue Info Bar */}
         <div className={`bg-blue-700 text-white transition-all duration-300 overflow-hidden ${scrolled ? 'h-0 opacity-0' : 'h-10 opacity-100'
           }`}>
-          <div className="container mx-auto px-6 lg:px-12 h-full flex justify-between items-center text-[11px] font-bold tracking-wider uppercase">
-            <div className="flex items-center gap-8">
-              <div className="flex items-center gap-2">
-                <HiEnvelope className="text-blue-200" />
-                <span>info@appliancepixels.shop</span>
-              </div>
-            </div>
+          <div className="container mx-auto px-6 lg:px-12 h-full flex justify-end items-center text-[11px] font-bold tracking-wider uppercase">
             <div className="flex items-center gap-2 text-blue-200">
               <HiOutlineCheckBadge size={16} />
               <span className="font-black">Verified Technical Excellence</span>
@@ -68,10 +62,10 @@ const Header = () => {
           ? 'bg-white/95 backdrop-blur-md py-3 shadow-md'
           : 'bg-white py-5'
           }`}>
-          <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center">
+          <div className="container mx-auto px-6 lg:px-12 flex justify-between items-center relative">
 
             {/* Logo Area */}
-            <div className="flex items-center gap-16">
+            <div className="flex items-center">
               <Link to="/" className="flex-shrink-0">
                 <img
                   src="/logo/logo.png"
@@ -79,73 +73,61 @@ const Header = () => {
                   className={`transition-all duration-300 ${scrolled ? 'h-10' : 'h-16'}`}
                 />
               </Link>
-
-              {/* Desktop Nav */}
-              <nav className="hidden xl:flex items-center gap-2">
-                {navLinks.map((link) => (
-                  <div
-                    key={link.name}
-                    className="relative group h-full flex items-center"
-                    onMouseEnter={() => link.hasDropdown && setIsServicesOpen(true)}
-                    onMouseLeave={() => link.hasDropdown && setIsServicesOpen(false)}
-                  >
-                    <Link
-                      to={link.path}
-                      className={`px-4 py-2 text-[13px] font-heading font-black uppercase tracking-widest transition-all flex items-center gap-1 ${location.pathname === link.path || (link.hasDropdown && location.pathname.startsWith('/service/'))
-                        ? 'text-blue-700'
-                        : 'text-slate-600 hover:text-blue-700'
-                        }`}
-                    >
-                      {link.name}
-                      {link.hasDropdown && <HiChevronDown className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />}
-                    </Link>
-
-                    {/* Mega Dropdown */}
-                    {link.hasDropdown && (
-                      <div className={`absolute top-full left-0 pt-4 transition-all duration-300 ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-4'
-                        }`}>
-                        <div className="bg-white shadow-2xl rounded-2xl border border-slate-100 p-8 w-[600px] grid grid-cols-2 gap-x-8 gap-y-2">
-                          <div className="col-span-2 mb-4 pb-4 border-b border-slate-50 flex justify-between items-center">
-                            <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-700">Expert Repair Solutions</span>
-                            <Link to="/services" className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-blue-700 transition-colors">View All Services</Link>
-                          </div>
-                          {servicesData.map((service) => (
-                            <Link
-                              key={service.id}
-                              to={`/service/${service.slug}`}
-                              className="group/item flex items-center gap-4 p-3 rounded-xl hover:bg-blue-50 transition-all"
-                            >
-                              <div className="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 group-hover/item:bg-blue-700 group-hover/item:text-white transition-all">
-                                <HiOutlineWrenchScrewdriver size={20} />
-                              </div>
-                              <div>
-                                <p className="text-[13px] font-heading font-bold text-slate-900 leading-none mb-1">{service.title}</p>
-                                <p className="text-[10px] text-slate-400 font-medium">Professional Repair</p>
-                              </div>
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    )}
-                  </div>
-                ))}
-              </nav>
             </div>
+
+            {/* Desktop Nav - Centered */}
+            <nav className="hidden xl:flex absolute left-1/2 -translate-x-1/2 items-center gap-2">
+              {navLinks.map((link) => (
+                <div
+                  key={link.name}
+                  className="relative group h-full flex items-center"
+                  onMouseEnter={() => link.hasDropdown && setIsServicesOpen(true)}
+                  onMouseLeave={() => link.hasDropdown && setIsServicesOpen(false)}
+                >
+                  <Link
+                    to={link.path}
+                    className={`px-4 py-2 text-[13px] font-heading font-black uppercase tracking-widest transition-all flex items-center gap-1 ${location.pathname === link.path || (link.hasDropdown && location.pathname.startsWith('/service/'))
+                      ? 'text-blue-700'
+                      : 'text-slate-600 hover:text-blue-700'
+                      }`}
+                  >
+                    {link.name}
+                    {link.hasDropdown && <HiChevronDown className={`transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`} />}
+                  </Link>
+
+                  {/* Mega Dropdown */}
+                  {link.hasDropdown && (
+                    <div className={`absolute top-full left-1/2 -translate-x-1/2 pt-4 transition-all duration-300 ${isServicesOpen ? 'opacity-100 visible translate-y-0' : 'opacity-0 invisible translate-y-4'
+                      }`}>
+                      <div className="bg-white shadow-2xl rounded-2xl border border-slate-100 p-8 w-[600px] grid grid-cols-2 gap-x-8 gap-y-2">
+                        <div className="col-span-2 mb-4 pb-4 border-b border-slate-50 flex justify-between items-center">
+                          <span className="text-[10px] font-black uppercase tracking-[0.2em] text-blue-700">Expert Repair Solutions</span>
+                          <Link to="/services" className="text-[10px] font-black uppercase tracking-[0.2em] text-slate-400 hover:text-blue-700 transition-colors">View All Services</Link>
+                        </div>
+                        {servicesData.map((service) => (
+                          <Link
+                            key={service.id}
+                            to={`/service/${service.slug}`}
+                            className="group/item flex items-center gap-4 p-3 rounded-xl hover:bg-blue-50 transition-all"
+                          >
+                            <div className="w-10 h-10 rounded-lg bg-slate-50 flex items-center justify-center text-slate-400 group-hover/item:bg-blue-700 group-hover/item:text-white transition-all">
+                              <HiOutlineWrenchScrewdriver size={20} />
+                            </div>
+                            <div>
+                              <p className="text-[13px] font-heading font-bold text-slate-900 leading-none mb-1">{service.title}</p>
+                              <p className="text-[10px] text-slate-400 font-medium">Professional Repair</p>
+                            </div>
+                          </Link>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+                </div>
+              ))}
+            </nav>
 
             {/* CTA Section */}
             <div className="flex items-center gap-8">
-              <div className="hidden md:flex items-center gap-4 group">
-                <div className="w-10 h-10 rounded-full bg-blue-50 flex items-center justify-center text-blue-700 group-hover:bg-blue-700 group-hover:text-white transition-all">
-                  <HiPhone size={18} />
-                </div>
-                <div className="flex flex-col">
-                  <span className="text-[10px] text-slate-400 uppercase font-black tracking-tighter">Support Email</span>
-                  <a href="mailto:info@appliancepixels.shop" className="text-base font-heading font-black text-slate-900 leading-none">
-                    info@appliancepixels.shop
-                  </a>
-                </div>
-              </div>
-
               <button
                 onClick={() => openBookingModal()}
                 className="px-8 py-3.5 bg-blue-700 hover:bg-slate-900 text-white rounded-full text-[12px] font-heading font-black uppercase tracking-widest shadow-lg shadow-blue-700/20 transition-all active:scale-95"
