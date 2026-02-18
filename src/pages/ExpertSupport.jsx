@@ -11,17 +11,6 @@ const ExpertSupport = () => {
     }
   };
 
-  const openCalendly = (e) => {
-    if (e) e.preventDefault();
-    if (window.Calendly) {
-      window.Calendly.initPopupWidget({
-        url: 'https://calendly.com/yourname/meeting'
-      });
-    } else {
-      console.log("Calendly widget not loaded yet");
-    }
-  };
-
   return (
     <div className="min-h-screen bg-white">
       {/* Header included directly as requested */}
@@ -31,21 +20,6 @@ const ExpertSupport = () => {
             <Link to="/" className="logo flex items-center no-underline">
               <h1 className="sitename m-0 text-white font-bold text-2xl">Customer Support</h1>
             </Link>
-            <nav id="navmenu" className="navmenu">
-              <div className="flex items-center gap-3 text-left">
-                <a href="tel:+1-402-508-9991" className="flex items-center gap-3 no-underline" style={{ cursor: 'pointer' }}>
-                  <div className="rounded-full flex items-center justify-center shrink-0" style={{ width: '45px', height: '45px', backgroundColor: 'rgba(255, 255, 255, 0.2)', color: 'rgb(255, 255, 255)' }}>
-                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path>
-                    </svg>
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="font-bold uppercase" style={{ fontSize: '11px', color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.2' }}>Call Anytime</span>
-                    <span className="font-bold whitespace-nowrap text-white" style={{ fontSize: '20px', lineHeight: '1.2' }}>+1-402-508-9991</span>
-                  </div>
-                </a>
-              </div>
-            </nav>
           </div>
         </div>
       </header>
@@ -71,18 +45,12 @@ const ExpertSupport = () => {
                     We Care To Serve Best As We Can
                   </h2>
 
-                  <div className="mt-10 flex flex-wrap justify-center gap-4">
+                  <div className="mt-10">
                     <button
                       onClick={openChat}
-                      className="bg-[#ffc008] text-gray-900 text-lg px-8 py-2 rounded-md cursor-pointer hover:bg-[#e6ac07] transition-all transform hover:scale-105 shadow-md"
+                      className="bg-[#ffc008] text-gray-900 text-lg px-8 py-2 rounded-md cursor-pointer  hover:bg-[#e6ac07] transition-all transform hover:scale-105 shadow-md"
                     >
                       Chat Now
-                    </button>
-                    <button
-                      onClick={openCalendly}
-                      className="bg-[#0046be] text-white text-lg px-8 py-2 rounded-md cursor-pointer hover:bg-[#003da6] transition-all transform hover:scale-105 shadow-md"
-                    >
-                      Schedule a Meeting
                     </button>
                   </div>
 

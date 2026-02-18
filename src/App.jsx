@@ -66,7 +66,7 @@ const AppContent = () => {
         <Route path="/service/:id" element={<ServiceDetails />} />
         <Route path="/blog/:id" element={<BlogDetails />} />
       </Routes>
-      {!hideHeader && <Footer />}
+      <Footer />
     </div>
   );
 };

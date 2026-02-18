@@ -152,21 +152,6 @@ const Services = () => {
             <Link to="/" className="logo flex items-center no-underline">
               <h1 className="sitename m-0 text-white font-bold text-2xl">Customer Support</h1>
             </Link>
-            <nav id="navmenu" className="navmenu">
-              <div className="flex items-center gap-3 text-left">
-                <a href="tel:+1-402-508-9991" className="flex items-center gap-3 no-underline" style={{ cursor: 'pointer' }}>
-                  <div className="rounded-full flex items-center justify-center shrink-0" style={{ width: '45px', height: '45px', backgroundColor: 'rgba(255, 255, 255, 0.2)', color: 'rgb(255, 255, 255)' }}>
-                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path>
-                    </svg>
-                  </div>
-                  <div className="flex flex-col">
-                    <span className="font-bold uppercase" style={{ fontSize: '11px', color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.2' }}>Call Anytime</span>
-                    <span className="font-bold whitespace-nowrap text-white" style={{ fontSize: '20px', lineHeight: '1.2' }}>+1-402-508-9991</span>
-                  </div>
-                </a>
-              </div>
-            </nav>
           </div>
         </div>
       </header>
@@ -174,7 +159,7 @@ const Services = () => {
 
       {/* Main Banner Section */}
       <main>
-        <div className="service-best bg-[#f0f2f4] pt-[165px] pb-[105px]">
+        <div className="service-best bg-[#f0f2f4] pt-[140px] pb-[40px]">
           <div className="container mx-auto px-4 2xl:max-w-[1320px]">
             <div className="row flex flex-wrap -mx-4">
               <div className="col-lg-12 w-full px-4 pb-[60px]">
@@ -258,6 +243,57 @@ const Services = () => {
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        {/* Services Grid (Now at the bottom, above footer) */}
+        <section className="py-24 bg-white border-t border-gray-100">
+          <div className="container mx-auto px-6 lg:px-12 2xl:max-w-[1320px]">
+            <div className="text-center mb-16">
+              <h2 className="text-[32px] font-bold text-gray-900">Explore Our Specialized Services</h2>
+              <p className="text-gray-500 mt-4 text-lg">We provide expert repair and maintenance for all your household essentials.</p>
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {servicesData && servicesData.map((service, index) => (
+                <div
+                  key={service.id || index}
+                  className="group relative bg-white border border-slate-100 p-8 rounded-[2rem] hover:shadow-2xl hover:shadow-blue-600/5 transition-all duration-500 overflow-hidden flex flex-col h-full"
+                >
+                  <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-[4rem] -mr-16 -mt-16 group-hover:bg-[#0046be] transition-colors duration-500"></div>
+
+                  <div className="relative z-10 flex flex-col h-full">
+                    <div className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-400 group-hover:bg-white group-hover:text-[#0046be] transition-all duration-500 mb-8 shadow-sm">
+                      <HiOutlineWrenchScrewdriver size={28} />
+                    </div>
+
+                    <h3 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight group-hover:text-[#0046be] transition-colors">
+                      {service.title}
+                    </h3>
+
+                    <p className="text-slate-500 font-medium leading-relaxed mb-10 line-clamp-3">
+                      {service.shortDesc}
+                    </p>
+
+                    <div className="mt-auto flex items-center justify-between gap-4">
+                      <Link
+                        to={`/service/${service.slug}`}
+                        className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-[#0046be] transition-all"
+                      >
+                        Explore Details
+                        <HiOutlineArrowLongRight className="group-hover:translate-x-1 transition-transform" />
+                      </Link>
+
+                      <button
+                        onClick={() => openBookingModal(service.title)}
+                        className="px-5 py-2.5 bg-slate-900 text-white rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-[#0046be] transition-all shadow-lg active:scale-95"
+                      >
+                        Book Now
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              ))}
             </div>
           </div>
         </section>
