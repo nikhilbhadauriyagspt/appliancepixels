@@ -11,6 +11,17 @@ const ExpertSupport = () => {
     }
   };
 
+  const openCalendly = (e) => {
+    if (e) e.preventDefault();
+    if (window.Calendly) {
+      window.Calendly.initPopupWidget({
+        url: 'https://calendly.com/yourname/meeting'
+      });
+    } else {
+      console.log("Calendly widget not loaded yet");
+    }
+  };
+
   return (
     <div className="min-h-screen bg-white">
       {/* Header included directly as requested */}
@@ -60,12 +71,18 @@ const ExpertSupport = () => {
                     We Care To Serve Best As We Can
                   </h2>
 
-                  <div className="mt-10">
+                  <div className="mt-10 flex flex-wrap justify-center gap-4">
                     <button
                       onClick={openChat}
-                      className="bg-[#ffc008] text-gray-900 text-lg px-8 py-2 rounded-md cursor-pointer  hover:bg-[#e6ac07] transition-all transform hover:scale-105 shadow-md"
+                      className="bg-[#ffc008] text-gray-900 text-lg px-8 py-2 rounded-md cursor-pointer hover:bg-[#e6ac07] transition-all transform hover:scale-105 shadow-md"
                     >
                       Chat Now
+                    </button>
+                    <button
+                      onClick={openCalendly}
+                      className="bg-[#0046be] text-white text-lg px-8 py-2 rounded-md cursor-pointer hover:bg-[#003da6] transition-all transform hover:scale-105 shadow-md"
+                    >
+                      Schedule a Meeting
                     </button>
                   </div>
 

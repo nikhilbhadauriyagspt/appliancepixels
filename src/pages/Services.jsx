@@ -216,57 +216,6 @@ const Services = () => {
           </div>
         </section>
 
-        {/* Services Grid (Restored) */}
-        <section className="py-24 bg-white">
-          <div className="container mx-auto px-6 lg:px-12 2xl:max-w-[1320px]">
-            <div className="text-center mb-16">
-              <h2 className="text-[32px] font-bold text-gray-900">Explore Our Specialized Services</h2>
-              <p className="text-gray-500 mt-4 text-lg">We provide expert repair and maintenance for all your household essentials.</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {servicesData && servicesData.map((service, index) => (
-                <div
-                  key={service.id || index}
-                  className="group relative bg-white border border-slate-100 p-8 rounded-[2rem] hover:shadow-2xl hover:shadow-blue-600/5 transition-all duration-500 overflow-hidden flex flex-col h-full"
-                >
-                  <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-[4rem] -mr-16 -mt-16 group-hover:bg-[#0046be] transition-colors duration-500"></div>
-
-                  <div className="relative z-10 flex flex-col h-full">
-                    <div className="w-14 h-14 bg-slate-50 rounded-2xl flex items-center justify-center text-slate-400 group-hover:bg-white group-hover:text-[#0046be] transition-all duration-500 mb-8 shadow-sm">
-                      <HiOutlineWrenchScrewdriver size={28} />
-                    </div>
-
-                    <h3 className="text-2xl font-bold text-slate-900 mb-4 tracking-tight group-hover:text-[#0046be] transition-colors">
-                      {service.title}
-                    </h3>
-
-                    <p className="text-slate-500 font-medium leading-relaxed mb-10 line-clamp-3">
-                      {service.shortDesc}
-                    </p>
-
-                    <div className="mt-auto flex items-center justify-between gap-4">
-                      <Link
-                        to={`/service/${service.slug}`}
-                        className="inline-flex items-center gap-2 text-[10px] font-black uppercase tracking-widest text-slate-400 group-hover:text-[#0046be] transition-all"
-                      >
-                        Explore Details
-                        <HiOutlineArrowLongRight className="group-hover:translate-x-1 transition-transform" />
-                      </Link>
-
-                      <button
-                        onClick={() => openBookingModal(service.title)}
-                        className="px-5 py-2.5 bg-slate-900 text-white rounded-xl text-[10px] font-bold uppercase tracking-widest hover:bg-[#0046be] transition-all shadow-lg active:scale-95"
-                      >
-                        Book Now
-                      </button>
-                    </div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
-
         {/* Testimonials Section */}
         <section className="sl-main-section pb-[60px]">
           <div className="container mx-auto px-4 2xl:max-w-[1320px]">
