@@ -61,10 +61,10 @@ const Contact = () => {
             <div className="lg:col-span-1 space-y-6">
               <div className="p-8 bg-blue-50/50 border border-blue-100 rounded-[2rem] group hover:bg-white hover:shadow-xl hover:shadow-blue-600/5 transition-all duration-500">
                 <div className="w-12 h-12 bg-white rounded-2xl flex items-center justify-center text-blue-600 shadow-sm mb-6 group-hover:bg-blue-600 group-hover:text-white transition-all">
-                  <HiOutlineArrowPath size={24} />
+                  <HiOutlinePhone size={24} />
                 </div>
-                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Support Status</p>
-                <p className="text-xl font-heading font-black text-slate-900 leading-none">24/7 Online Support</p>
+                <p className="text-[10px] font-black uppercase tracking-widest text-slate-400 mb-2">Technical Hotline</p>
+                <a href="tel:4025089511" className="text-xl font-heading font-black text-slate-900 leading-none hover:text-blue-600 transition-colors">+1-402-508-9511</a>
               </div>
 
               <div className="p-8 bg-emerald-50/50 border border-emerald-100 rounded-[2rem] group hover:bg-white hover:shadow-xl hover:shadow-emerald-600/5 transition-all duration-500">

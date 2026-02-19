@@ -140,11 +140,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-12 border-y border-slate-200 mb-12">
           <div className="flex items-center gap-5">
             <div className="w-12 h-12 rounded-2xl bg-blue-600/5 flex items-center justify-center text-blue-600 border border-blue-600/10">
-              <HiOutlineShieldCheck size={20} />
+              <HiOutlinePhone size={20} />
             </div>
             <div>
-              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Available</p>
-              <p className="text-sm font-heading font-black text-slate-900">24/7 Service Support</p>
+              <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Call Technical Support</p>
+              <a href="tel:4025089511" className="text-sm font-heading font-black text-slate-900 hover:text-blue-600 transition-colors">+1-402-508-9511</a>
             </div>
           </div>
           <div className="flex items-center gap-5">

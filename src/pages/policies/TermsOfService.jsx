@@ -38,7 +38,7 @@ const TermsOfService = () => {
               effective servicing.
             </p>
             <p>
-              You can contact us by email at <a href="mailto:info@appliancepixels.shop" className="text-primary">info@appliancepixels.shop</a>, or by
+              You can contact us by email at <a href="mailto:info@appliancepixels.shop" className="text-primary">info@appliancepixels.shop</a>, by phone at +1-402-508-9511, or by
               mail to 4089 Leap Rd, Hilliard, OH 43026, United States.
             </p>
             <p>
@@ -273,7 +273,8 @@ const TermsOfService = () => {
               4089 Leap Rd<br />
               Hilliard, OH 43026<br />
               United States<br />
-              <a href="mailto:info@appliancepixels.shop" className="text-primary">info@appliancepixels.shop</a>
+              Phone: +1-402-508-9511<br />
+              Email: <a href="mailto:info@appliancepixels.shop" className="text-primary">info@appliancepixels.shop</a>
             </address>
           </section>
         </div>

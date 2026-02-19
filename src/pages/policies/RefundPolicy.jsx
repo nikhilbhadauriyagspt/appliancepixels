@@ -78,8 +78,9 @@ const RefundPolicy = () => {
             <p>
               If you have any questions concerning our return policy, please contact us at:
             </p>
-            <div className="bg-primary text-white p-8 rounded-2xl shadow-xl mt-4 text-center">
-              <a href="mailto:info@appliancepixels.shop" className="text-secondary font-bold text-lg hover:underline">info@appliancepixels.shop</a>
+            <div className="bg-primary text-white p-8 rounded-2xl shadow-xl mt-4 text-center space-y-2">
+              <a href="tel:4025089511" className="block text-white font-bold text-lg hover:underline">+1-402-508-9511</a>
+              <a href="mailto:info@appliancepixels.shop" className="block text-secondary font-bold text-lg hover:underline">info@appliancepixels.shop</a>
             </div>
           </section>
         </div>

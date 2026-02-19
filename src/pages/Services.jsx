@@ -152,6 +152,22 @@ const Services = () => {
             <Link to="/" className="logo flex items-center no-underline">
               <h1 className="sitename m-0 text-white font-bold text-2xl">Customer Support</h1>
             </Link>
+
+            <nav id="navmenu" className="navmenu">
+              <div className="flex items-center gap-3 text-start">
+                <a href="tel:4025089511" className="flex items-center gap-3 no-underline transition-opacity hover:opacity-80" style={{ cursor: 'pointer' }}>
+                  <div className="rounded-full flex items-center justify-center flex-shrink-0" style={{ width: '45px', height: '45px', backgroundColor: 'rgba(255, 255, 255, 0.2)', color: 'rgb(255, 255, 255)' }}>
+                    <svg stroke="currentColor" fill="currentColor" strokeWidth="0" viewBox="0 0 512 512" height="18" width="18" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M497.39 361.8l-112-48a24 24 0 0 0-28 6.9l-49.6 60.6A370.66 370.66 0 0 1 130.6 204.11l60.6-49.6a23.94 23.94 0 0 0 6.9-28l-48-112A24.16 24.16 0 0 0 122.6.61l-104 24A24 24 0 0 0 0 48c0 256.5 207.9 464 464 464a24 24 0 0 0 23.4-18.6l24-104a24.29 24.29 0 0 0-14.01-27.6z"></path>
+                    </svg>
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="font-bold uppercase" style={{ fontSize: '11px', color: 'rgba(255, 255, 255, 0.8)', lineHeight: '1.2' }}>Call Anytime</span>
+                    <span className="font-bold whitespace-nowrap" style={{ fontSize: '20px', color: 'rgb(255, 255, 255)', lineHeight: '1.2' }}>+1-402-508-9511</span>
+                  </div>
+                </a>
+              </div>
+            </nav>
           </div>
         </div>
       </header>

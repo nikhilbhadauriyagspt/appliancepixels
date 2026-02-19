@@ -109,6 +109,11 @@ const BookingModal = () => {
                 <span>Request Technical Visit</span>
                 <HiOutlineCheckBadge className="group-hover:scale-110 transition-transform" size={20} />
               </button>
+
+              <div className="text-center pt-2">
+                <p className="text-[10px] text-slate-400 font-bold uppercase tracking-widest mb-2">Or Call Us Directly</p>
+                <a href="tel:4025089511" className="text-blue-600 font-black text-lg hover:underline transition-all">+1-402-508-9511</a>
+              </div>
             </form>
           </div>
         )}

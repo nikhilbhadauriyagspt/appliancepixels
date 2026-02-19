@@ -276,7 +276,9 @@ const PrivacyPolicy = () => {
               Appliance Pixels<br />
               4089 Leap Rd<br />
               Hilliard, OH 43026<br />
-              United States
+              United States<br />
+              Phone: +1-402-508-9511<br />
+              Email: info@appliancepixels.shop
             </address>
           </section>
 

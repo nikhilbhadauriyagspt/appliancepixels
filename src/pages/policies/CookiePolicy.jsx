@@ -129,6 +129,7 @@ const CookiePolicy = () => {
               4089 Leap Rd<br />
               Hilliard, OH 43026<br />
               United States<br />
+              Phone: +1-402-508-9511<br />
               Email: <a href="mailto:info@appliancepixels.shop" className="text-primary">info@appliancepixels.shop</a>
             </address>
           </section>

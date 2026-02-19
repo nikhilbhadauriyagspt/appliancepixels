@@ -49,7 +49,17 @@ const Header = () => {
         {/* Top Tier: Blue Info Bar */}
         <div className={`bg-blue-700 text-white transition-all duration-300 overflow-hidden ${scrolled ? 'h-0 opacity-0' : 'h-10 opacity-100'
           }`}>
-          <div className="container mx-auto px-6 lg:px-12 h-full flex justify-end items-center text-[11px] font-bold tracking-wider uppercase">
+          <div className="container mx-auto px-6 lg:px-12 h-full flex justify-between items-center text-[11px] font-bold tracking-wider uppercase">
+            <div className="flex items-center gap-6">
+              <a href="tel:4025089511" className="flex items-center gap-2 text-white hover:text-blue-200 transition-colors">
+                <HiPhone size={14} />
+                <span>+1-402-508-9511</span>
+              </a>
+              <a href="mailto:info@appliancepixels.shop" className="hidden md:flex items-center gap-2 text-white hover:text-blue-200 transition-colors">
+                <HiEnvelope size={14} />
+                <span>info@appliancepixels.shop</span>
+              </a>
+            </div>
             <div className="flex items-center gap-2 text-blue-200">
               <HiOutlineCheckBadge size={16} />
               <span className="font-black">Verified Technical Excellence</span>
@@ -224,7 +234,17 @@ const Header = () => {
 
             {/* Sidebar Footer */}
             <div className="p-8 bg-slate-50 border-t border-slate-100">
-              <div className="space-y-6">
+              <div className="space-y-4">
+                <a href="tel:4025089511" className="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm">
+                  <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-700">
+                    <HiPhone size={20} />
+                  </div>
+                  <div>
+                    <p className="text-[10px] font-black text-slate-400 uppercase tracking-widest">Call Expert</p>
+                    <p className="text-lg font-heading font-black text-slate-900">+1-402-508-9511</p>
+                  </div>
+                </a>
+
                 <a href="mailto:info@appliancepixels.shop" className="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm">
                   <div className="w-12 h-12 rounded-full bg-blue-50 flex items-center justify-center text-blue-700">
                     <HiEnvelope size={20} />
